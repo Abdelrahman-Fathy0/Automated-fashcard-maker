@@ -75,6 +75,19 @@ jobs:
           echo "MODEL=${{ github.event.inputs.model || 'gpt4o-mini' }}" >> $GITHUB_ENV
           echo "MAX_REQUESTS=${{ github.event.inputs.max_requests_per_run || '140' }}" >> $GITHUB_ENV
 
+      # Copy the script from its location to the repository
+      - name: Copy script file
+        run: |
+          if [ -f "/workspaces/codespaces-models/incremental_comprehensive_flashcard_generator.py" ]; then
+            cp /workspaces/codespaces-models/incremental_comprehensive_flashcard_generator.py .
+            echo "Using script from codespaces path"
+          elif [ -f "incremental_comprehensive_flashcard_generator.py" ]; then
+            echo "Script already exists in repository root"
+          else
+            echo "ERROR: Script not found. Please commit the script to your repository."
+            exit 1
+          fi
+
       - name: Run incremental flashcard generator
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
