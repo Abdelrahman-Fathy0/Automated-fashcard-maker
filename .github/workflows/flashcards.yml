@@ -56,7 +56,6 @@ jobs:
           python scripts/flashcard_generator.py "${{ inputs.pdf_path }}" \
             --model "${{ inputs.model }}" \
             --max-requests "${{ inputs.max_requests }}" \
-            --min-importance "${{ inputs.min_importance }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
