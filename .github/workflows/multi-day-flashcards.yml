@@ -72,22 +72,14 @@ jobs:
           name: completed-flashcards
           path: comprehensive_flashcards/
 
-      - name: Send email notification if completed
+      - name: Create completion summary
         if: env.FLASHCARDS_COMPLETED == 'true'
-        uses: dawidd6/action-send-mail@v3
-        with:
-          server_address: ${{ secrets.MAIL_SERVER }}
-          server_port: ${{ secrets.MAIL_PORT }}
-          username: ${{ secrets.MAIL_USERNAME }}
-          password: ${{ secrets.MAIL_PASSWORD }}
-          subject: "Flashcard Generation Complete"
-          body: |
-            Your comprehensive flashcards have been successfully generated!
-            
-            Download them from the GitHub Actions artifacts at:
-            https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
-            
-            This automated process used the ${{ env.MODEL }} model and processed your textbook with hierarchical concept analysis to ensure comprehensive coverage of all topics and components.
-          to: ${{ secrets.EMAIL_TO }}
-          from: GitHub Actions <${{ secrets.MAIL_USERNAME }}>
-          attachments: comprehensive_flashcards/run_*/concept_coverage.json
+        run: |
+          echo "### 🎉 Flashcard Generation Complete! 🎉" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Your comprehensive flashcards are ready to download from the artifacts section." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Details:**" >> $GITHUB_STEP_SUMMARY
+          echo "- Model used: $MODEL" >> $GITHUB_STEP_SUMMARY
+          echo "- PDF processed: $PDF_PATH" >> $GITHUB_STEP_SUMMARY
+          echo "- Download the 'completed-flashcards' artifact to access your files" >> $GITHUB_STEP_SUMMARY
