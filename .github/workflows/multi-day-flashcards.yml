@@ -6,7 +6,7 @@ on:
       pdf_path:
         description: 'Path to PDF file'
         required: true
-        default: 'pdfs/textbook.pdf'
+        default: '/workspaces/codespaces-models/pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf'
       model:
         description: 'AI model to use'
         required: true
@@ -24,10 +24,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
@@ -37,7 +37,7 @@ jobs:
           pip install azure-ai-inference PyMuPDF tqdm
 
       - name: Download previous progress
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: flashcard-progress
           path: progress
@@ -48,7 +48,7 @@ jobs:
 
       - name: Set default environment variables
         run: |
-          echo "PDF_PATH=${{ github.event.inputs.pdf_path || 'pdfs/textbook.pdf' }}" >> $GITHUB_ENV
+          echo "PDF_PATH=${{ github.event.inputs.pdf_path || '/workspaces/codespaces-models/pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf' }}" >> $GITHUB_ENV
           echo "MODEL=${{ github.event.inputs.model || 'gpt4o-mini' }}" >> $GITHUB_ENV
           echo "MAX_REQUESTS=${{ github.event.inputs.max_requests_per_run || '140' }}" >> $GITHUB_ENV
 
@@ -60,14 +60,14 @@ jobs:
           echo "FLASHCARDS_COMPLETED=${FLASHCARDS_COMPLETED}" >> $GITHUB_ENV
 
       - name: Upload progress as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: flashcard-progress
           path: progress/
 
       - name: Upload completed flashcards if generation is complete
         if: env.FLASHCARDS_COMPLETED == 'true'
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: completed-flashcards
           path: comprehensive_flashcards/
