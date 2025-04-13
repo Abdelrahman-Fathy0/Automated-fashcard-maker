@@ -1067,6 +1067,7 @@ def main():
         print(f"Total flashcards generated so far: {len(progress['flashcards'])}")
         print("Run the script again to continue processing")
         print("=" * 44)
+        #this is nothing
 
 if __name__ == "__main__":
     main()
