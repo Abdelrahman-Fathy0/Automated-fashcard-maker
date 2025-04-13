@@ -5,10 +5,9 @@ on:
   schedule:
     - cron: '0 2 * * *'  # Run daily at 2:00 AM UTC
 
-# Permissions for the default GITHUB_TOKEN (still useful to keep)
+# Permissions for the default GITHUB_TOKEN
 permissions:
   contents: write
-  models: write
 
 jobs:
   generate-flashcards:
@@ -68,7 +67,6 @@ jobs:
       
       - name: Run incremental flashcard generation
         env:
-          # Replace GITHUB_TOKEN with your PAT
           GITHUB_TOKEN: ${{ secrets.PAT }}
         run: |
           python comprehensive_flashcard_generator.py pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf --max-requests 140
