@@ -1,0 +1,90 @@
+name: Generate Flashcards
+
+on:
+  workflow_dispatch:
+    inputs:
+      pdf_path:
+        description: 'Path to PDF file'
+        required: true
+        default: 'pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf'
+      model:
+        description: 'Model to use'
+        required: true
+        default: 'gpt4o-mini'
+        type: choice
+        options:
+          - gpt4o-mini
+          - gpt4o
+          - llama3-small
+          - llama3-large
+          - mistral-small
+      max_requests:
+        description: 'Maximum API requests'
+        required: false
+        default: '140'
+      min_importance:
+        description: 'Minimum flashcard importance (1-10)'
+        required: false
+        default: '3'
+
+jobs:
+  generate-flashcards:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+          
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install azure-ai-inference PyMuPDF tqdm
+          
+      - name: Verify script exists
+        run: |
+          if [ ! -f "scripts/flashcard_generator.py" ]; then
+            echo "Error: scripts/flashcard_generator.py does not exist!"
+            exit 1
+          fi
+          
+      - name: Generate flashcards
+        run: |
+          python scripts/flashcard_generator.py "${{ inputs.pdf_path }}" \
+            --model "${{ inputs.model }}" \
+            --max-requests "${{ inputs.max_requests }}" \
+            --min-importance "${{ inputs.min_importance }}"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Upload flashcards as artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: flashcards-${{ github.run_id }}
+          path: generated_flashcards/
+          retention-days: 30
+          
+      - name: Create summary
+        if: success()
+        run: |
+          echo "# Flashcard Generation Complete" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **PDF:** ${{ inputs.pdf_path }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Model:** ${{ inputs.model }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Max Requests:** ${{ inputs.max_requests }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Download the generated flashcards from the Artifacts section." >> $GITHUB_STEP_SUMMARY
+
+  on-failure:
+    runs-on: ubuntu-latest
+    needs: generate-flashcards
+    if: failure()
+    steps:
+      - name: Create failure summary
+        run: |
+          echo "# Flashcard Generation Failed" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Check the workflow logs for more details." >> $GITHUB_STEP_SUMMARY
