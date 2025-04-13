@@ -72,29 +72,46 @@ jobs:
           name: completed-flashcards
           path: comprehensive_flashcards/
 
-      - name: Create notification issue when complete
+      # Use a simpler approach for notification
+      - name: Create completion summary
         if: env.FLASHCARDS_COMPLETED == 'true'
-        uses: actions/github-script@v6
+        run: |
+          echo "### 🎉 Flashcard Generation Complete! 🎉" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "Your comprehensive flashcards are ready to download from the artifacts section." >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "**Details:**" >> $GITHUB_STEP_SUMMARY
+          echo "- Model used: $MODEL" >> $GITHUB_STEP_SUMMARY
+          echo "- PDF processed: $PDF_PATH" >> $GITHUB_STEP_SUMMARY
+          echo "- Download the 'completed-flashcards' artifact to access your files" >> $GITHUB_STEP_SUMMARY
+
+      # Use a simpler GitHub issue creation approach
+      - name: Create notification issue
+        if: env.FLASHCARDS_COMPLETED == 'true'
+        uses: peter-evans/create-issue-from-file@v4
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          script: |
-            const result = await github.rest.issues.create({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              title: '🎉 Flashcard Generation Complete!',
-              body: `Your comprehensive flashcards are ready!
+          title: 🎉 Flashcard Generation Complete!
+          content-filepath: ./issue-body.md
+          token: ${{ secrets.GITHUB_TOKEN }}
 
-### Details
-- **PDF processed**: \`${process.env.PDF_PATH}\`
-- **Model used**: \`${process.env.MODEL}\`
-- **Date completed**: ${new Date().toISOString()}
+      # Create the issue content file
+      - name: Prepare issue content
+        if: env.FLASHCARDS_COMPLETED == 'true'
+        run: |
+          cat > issue-body.md << EOL
+          Your comprehensive flashcards are ready!
 
-### How to Access Your Flashcards
-1. Go to the [Actions tab](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})
-2. Scroll down to "Artifacts"
-3. Download the "completed-flashcards" file
-4. Extract the ZIP file to access your flashcards in various formats
+          ### Details
+          - **PDF processed**: \`${PDF_PATH}\`
+          - **Model used**: \`${MODEL}\`
+          - **Date completed**: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
 
-The flashcards have been generated with comprehensive coverage of all concepts and components, ensuring all related topics are covered.`
-            });
-            console.log('Created issue #' + result.data.number);
+          ### How to Access Your Flashcards
+          1. Go to the Actions tab in this repository
+          2. Click on the most recent workflow run
+          3. Scroll down to "Artifacts"
+          4. Download the "completed-flashcards" file
+          5. Extract the ZIP file to access your flashcards in various formats
+
+          The flashcards have been generated with comprehensive coverage of all concepts and components, ensuring all related topics are covered.
+          EOL
