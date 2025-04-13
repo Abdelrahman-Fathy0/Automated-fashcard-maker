@@ -1,0 +1,86 @@
+name: Generate Flashcards
+
+on:
+  workflow_dispatch:
+    inputs:
+      pdf_path:
+        description: 'Path to PDF file'
+        required: true
+        default: 'pdfs/textbook.pdf'
+      model:
+        description: 'AI model to use'
+        required: true
+        default: 'gpt4o-mini'
+      max_requests_per_run:
+        description: 'Maximum API requests per run'
+        required: true
+        default: '140'
+  schedule:
+    # Run daily at 1 AM UTC
+    - cron: '0 1 * * *'
+
+jobs:
+  generate-flashcards:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install azure-ai-inference PyMuPDF tqdm
+
+      - name: Download previous progress
+        uses: actions/download-artifact@v3
+        with:
+          name: flashcard-progress
+          path: progress
+        continue-on-error: true
+
+      - name: Create progress directory if not exists
+        run: mkdir -p progress
+
+      - name: Generate progress file if not exists
+        run: |
+          if [ ! -f "progress/progress.json" ]; then
+            echo '{"chunks_processed": 0, "total_chunks": 0, "completed": false, "pdf_path": "${{ github.event.inputs.pdf_path || 'pdfs/textbook.pdf' }}", "model": "${{ github.event.inputs.model || 'gpt4o-mini' }}", "flashcards": []}' > progress/progress.json
+          fi
+
+      - name: Run flashcard generator with progress tracking
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAX_REQUESTS: ${{ github.event.inputs.max_requests_per_run || '140' }}
+        run: |
+          python incremental_flashcard_generator.py
+
+      - name: Upload progress as artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: flashcard-progress
+          path: progress/
+
+      - name: Upload flashcards if completed
+        if: ${{ env.FLASHCARDS_COMPLETED == 'true' }}
+        uses: actions/upload-artifact@v3
+        with:
+          name: completed-flashcards
+          path: output/
+
+      - name: Send email notification if completed
+        if: ${{ env.FLASHCARDS_COMPLETED == 'true' }}
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.MAIL_SERVER }}
+          server_port: ${{ secrets.MAIL_PORT }}
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          subject: Flashcard Generation Complete
+          body: Your flashcards have been successfully generated! Download them from the workflow artifacts.
+          to: ${{ secrets.EMAIL_TO }}
+          from: GitHub Actions
