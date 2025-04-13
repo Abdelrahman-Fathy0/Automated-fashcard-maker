@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: '0 2 * * *'  # Run daily at 2:00 AM UTC
 
+# Permissions for the default GITHUB_TOKEN (still useful to keep)
+permissions:
+  contents: write
+  models: write
+
 jobs:
   generate-flashcards:
     runs-on: ubuntu-latest
@@ -44,9 +49,27 @@ jobs:
           # Verify PDF file was downloaded correctly
           ls -la pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf
       
+      - name: Debug repository files
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Repository contents:"
+          ls -la
+          find . -type f -name "*.py" | sort
+      
+      - name: Extensive debug
+        run: |
+          echo "Working directory: $(pwd)"
+          echo "Repository contents (detailed):"
+          find . -type f | sort
+          echo "Branch information:"
+          git branch -a
+          echo "Git status:"
+          git status
+      
       - name: Run incremental flashcard generation
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          # Replace GITHUB_TOKEN with your PAT
+          GITHUB_TOKEN: ${{ secrets.PAT }}
         run: |
           python comprehensive_flashcard_generator.py pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf --max-requests 140
           mkdir -p progress
@@ -76,9 +99,13 @@ jobs:
       
       - name: Commit results if completed
         if: steps.check-completion.outputs.completed == 'true'
+        env:
+          # Use PAT for git operations
+          GH_TOKEN: ${{ secrets.PAT }}
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add comprehensive_flashcards/
           git commit -m "Add completed flashcards [skip ci]"
-          git push
+          # Use token for authentication
+          git push https://${GH_TOKEN}@github.com/Abdelrahman-Fathy0/Automated-fashcard-maker.git
