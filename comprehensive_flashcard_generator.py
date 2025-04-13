@@ -21,6 +21,13 @@ from azure.ai.inference import ChatCompletionsClient
 from azure.ai.inference.models import SystemMessage, UserMessage
 from azure.core.credentials import AzureKeyCredential
 
+# Add this custom JSON encoder class
+class CustomJSONEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, ConceptNode):
+            return obj.to_dict()
+        return super().default(obj)
+
 # Create output directory
 OUTPUT_DIR = "comprehensive_flashcards"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
@@ -839,7 +846,7 @@ def save_progress(progress_data):
                     serializable_flashcards.append(card)
             serializable_progress["flashcards"] = serializable_flashcards
         
-        json.dump(serializable_progress, f, indent=2)
+        json.dump(serializable_progress, f, cls=CustomJSONEncoder, indent=2)
 
 def reconstruct_objects(progress_data):
     """Reconstruct objects from serialized data."""
