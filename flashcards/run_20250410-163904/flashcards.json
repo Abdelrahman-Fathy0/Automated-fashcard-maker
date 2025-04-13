@@ -1,0 +1,722 @@
+[
+  {
+    "question": "What is the main aim of the book \"OCR AS and A Level Computer Science\"?",
+    "answer": "The main aim of the book is to provide detailed coverage of the topics in the new OCR AS and A Level Computer Science specification.\n\nFlashcard 2:",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "How is the content of the book organized for teaching purposes?",
+    "answer": "The book is divided into twelve sections, with each chapter covering material that can comfortably be taught in one or two lessons.\n\nFlashcard 3:",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What programming approach does the book utilize in its algorithms?",
+    "answer": "The book uses pseudocode for the algorithms, rather than any specific programming language.\n\nFlashcard 4:",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What resource is available to teachers for assessment preparation?",
+    "answer": "A free Teacher's Pack is available, which includes answers to exercises and questions in the book.\n\nFlashcard 5:",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are Sections 10, 11, and 12 of the book primarily focused on?",
+    "answer": "Sections 10, 11, and 12 principally relate to problem-solving skills and cover programming techniques in sufficient depth for Component 02.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the main components of the Central Processing Unit (CPU)?",
+    "answer": "The main components of the CPU include the control unit, arithmetic/logic unit (ALU), buses, and dedicated registers.\n\nFlashcard 2:",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the role of the Control Unit in the CPU?",
+    "answer": "The Control Unit controls and coordinates the activities of the CPU, directing the flow of data between the CPU and other devices, managing instruction execution, and storing resulting data.\n\nFlashcard 3:",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the function of the Fetch-Execute cycle in a CPU?",
+    "answer": "The Fetch-Execute cycle involves the CPU fetching an instruction from memory, decoding it, executing the instruction, and then storing the resulting data back in memory or registers.\n\nFlashcard 4:",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "Describe the purpose of the system bus in a computer.",
+    "answer": "The system bus connects the processor, memory, and I/O controllers, consisting of data, address, and control buses, allowing for the transmission of data and control signals.\n\nFlashcard 5:",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "How do the data, address, and control buses differ in their function?",
+    "answer": "The data bus carries data in both directions, the address bus sends addresses from the CPU to memory or I/O controllers (one way), and the control bus transmits control signals in both directions.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the three main buses in a computer system and what is their collective name?",
+    "answer": "The three main buses are the control bus, data bus, and address bus, collectively known as the system bus.\n\nFlashcard 2:",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the purpose of the control bus in a computer system?",
+    "answer": "The control bus transmits command, timing, and specific status information between system components, ensuring proper access and use of the data and address buses.\n\nFlashcard 3:",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "Describe the function of the Arithmetic-Logic Unit (ALU).",
+    "answer": "The ALU performs arithmetic and logical operations on data, including addition, subtraction, multiplication, division, shift operations, and Boolean logic operations.\n\nFlashcard 4:",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What role does the program counter (PC) play in a CPU?",
+    "answer": "The program counter (PC) holds the address of the next instruction to be executed, which may be sequential or from a branch/jump instruction.\n\nFlashcard 5:",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the memory address register (MAR) and memory data register (MDR) used for?",
+    "answer": "The MAR holds the address of the memory location for fetching or writing data, while the MDR temporarily stores the data read from or written to memory.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the function of the Memory Address Register (MAR) in the Fetch-Execute cycle?",
+    "answer": "The MAR holds the address of the next instruction to be fetched from memory.\n\nFlashcard 2",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the role of the Memory Data Register (MDR) during the Fetch phase?",
+    "answer": "The MDR temporarily stores the data read from or written to memory.\n\nFlashcard 3",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "During which phase of the Fetch-Decode-Execute cycle is the instruction split into opcode and operand?",
+    "answer": "This occurs during the Decode phase.\n\nFlashcard 4",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What happens to the Program Counter (PC) during the Fetch phase of the cycle?",
+    "answer": "The content of the PC is incremented to hold the address of the next instruction after the current instruction is fetched.\n\nFlashcard 5",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "At which stages of the Fetch-Execute cycle are the ALU and accumulator involved?",
+    "answer": "The ALU is involved during the Execute phase, while the accumulator may be involved in carrying out operations with the operand.",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the main factors affecting processor performance?",
+    "answer": "The main factors are clock speed, the number of cores, and the amount and type of cache memory.\n\nFlashcard 2:",
+    "source_pages": [
+      14,
+      15
+    ],
+    "tags": [
+      "page-14-15",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "How is clock speed measured and what is its significance in CPU operations?",
+    "answer": "Clock speed is measured in Hertz (Hz) and Gigahertz (GHz), representing the number of cycles per second. It determines how fast instructions can be executed by the CPU.\n\nFlashcard 3:",
+    "source_pages": [
+      14,
+      15
+    ],
+    "tags": [
+      "page-14-15",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the difference between a dual-core and a quad-core processor?",
+    "answer": "A dual-core processor has two processors linked together, while a quad-core processor has four linked processors. Each core can process different instructions simultaneously.\n\nFlashcard 4:",
+    "source_pages": [
+      14,
+      15
+    ],
+    "tags": [
+      "page-14-15",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "Why might a dual-core processor not always perform twice as fast as a single-core processor?",
+    "answer": "A dual-core processor may not perform twice as fast due to software limitations that prevent it from fully utilizing both processors.\n\nFlashcard 5:",
+    "source_pages": [
+      14,
+      15
+    ],
+    "tags": [
+      "page-14-15",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What role does cache memory play in CPU performance?",
+    "answer": "Cache memory is a small, fast memory inside the CPU that stores recently fetched instructions. It allows quicker access compared to main memory, improving overall system performance.",
+    "source_pages": [
+      14,
+      15
+    ],
+    "tags": [
+      "page-14-15",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the purpose of cache memory in a computer system?",
+    "answer": "Cache memory stores instructions and data fetched from main memory so they can be retrieved quickly if needed again soon, improving overall system performance.\n\nFlashcard 2",
+    "source_pages": [
+      15,
+      16,
+      17
+    ],
+    "tags": [
+      "page-15-16-17",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the different levels of cache, and how do they vary in size and speed?",
+    "answer": "Level 1 cache is very fast but small (2-64KB), Level 2 cache is fairly fast and medium-sized (256KB-2MB), and some CPUs also have Level 3 cache, which is typically larger but slower than Level 2.\n\nFlashcard 3",
+    "source_pages": [
+      15,
+      16,
+      17
+    ],
+    "tags": [
+      "page-15-16-17",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "How does pipelining improve processor performance?",
+    "answer": "Pipelining allows multiple instructions to be processed simultaneously by overlapping the Fetch-Execute cycle stages, which keeps the ALU busy and reduces idle time.\n\nFlashcard 4",
+    "source_pages": [
+      15,
+      16,
+      17
+    ],
+    "tags": [
+      "page-15-16-17",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the significance of the width of the address bus in a computer system?",
+    "answer": "The width of the address bus determines the maximum memory capacity that can be addressed; for example, a 32-bit address bus can address 4 GiB of memory locations.\n\nFlashcard 5",
+    "source_pages": [
+      15,
+      16,
+      17
+    ],
+    "tags": [
+      "page-15-16-17",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "In a machine code instruction format, what two main components are typically included?",
+    "answer": "The two main components are the operation code (opcode) that specifies the basic machine operation, and the operand(s) that provide the necessary data or address for the operation.",
+    "source_pages": [
+      15,
+      16,
+      17
+    ],
+    "tags": [
+      "page-15-16-17",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the name of the language in which the provided machine code program is written?",
+    "answer": "The language is referred to as machine code or assembly language.\n\nFlashcard 2",
+    "source_pages": [
+      17,
+      18,
+      19
+    ],
+    "tags": [
+      "page-17-18-19",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "In a von Neumann machine, what is shared between data and instructions?",
+    "answer": "A shared memory and bus are used for both data and instructions.\n\nFlashcard 3",
+    "source_pages": [
+      17,
+      18,
+      19
+    ],
+    "tags": [
+      "page-17-18-19",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the primary architectural difference between von Neumann and Harvard architectures?",
+    "answer": "The von Neumann architecture uses a single memory for both instructions and data, whereas the Harvard architecture has physically separate memories for instructions and data.\n\nFlashcard 4",
+    "source_pages": [
+      17,
+      18,
+      19
+    ],
+    "tags": [
+      "page-17-18-19",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "Why can Harvard architecture be faster than von Neumann architecture?",
+    "answer": "Harvard architecture can fetch data and instructions in parallel, while von Neumann architecture requires them to compete for the same bus.\n\nFlashcard 5",
+    "source_pages": [
+      17,
+      18,
+      19
+    ],
+    "tags": [
+      "page-17-18-19",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What type of systems predominantly uses Harvard architecture?",
+    "answer": "Harvard architecture is extensively used in embedded Digital Signal Processing (DSP) systems.",
+    "source_pages": [
+      17,
+      18,
+      19
+    ],
+    "tags": [
+      "page-17-18-19",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the main characteristics of von Neumann architecture?",
+    "answer": "In von Neumann architecture, data and programs share the same memory, and one bus is used to transfer both data and instructions.\n\nFlashcard 2:",
+    "source_pages": [
+      19,
+      20
+    ],
+    "tags": [
+      "page-19-20",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What distinguishes Harvard architecture from von Neumann architecture?",
+    "answer": "Harvard architecture has separate memories for instructions and data, allowing for parallel data and instruction buses, while von Neumann architecture uses a single memory for both.\n\nFlashcard 3:",
+    "source_pages": [
+      19,
+      20
+    ],
+    "tags": [
+      "page-19-20",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is a key feature of Complex Instruction Set Computers (CISC)?",
+    "answer": "CISC uses a large instruction set to perform tasks in fewer lines of assembly language, with complex instructions built into the hardware.\n\nFlashcard 4:",
+    "source_pages": [
+      19,
+      20
+    ],
+    "tags": [
+      "page-19-20",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the advantages and disadvantages of CISC architecture?",
+    "answer": "An advantage of CISC is less work for the compiler to translate high-level language into machine code due to shorter code. A disadvantage is that many specialized instructions are built into the hardware, often leading to underutilization.\n\nFlashcard 5:",
+    "source_pages": [
+      19,
+      20
+    ],
+    "tags": [
+      "page-19-20",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "How does Reduced Instruction Set Computer (RISC) architecture differ from CISC?",
+    "answer": "RISC architecture executes only simple instructions, each taking one clock cycle, which allows for pipelining, while CISC can execute complex instructions but may require more RAM and compiler work for translation.",
+    "source_pages": [
+      19,
+      20
+    ],
+    "tags": [
+      "page-19-20",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the primary advantage of RISC over CISC architecture in terms of instruction execution?",
+    "answer": "RISC allows pipelining, enabling multiple instructions to be executed simultaneously, which can execute at least as fast as a single CISC instruction.\n\nFlashcard 2:",
+    "source_pages": [
+      20,
+      21,
+      22
+    ],
+    "tags": [
+      "page-20-21-22",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the role of a co-processor in a computer system?",
+    "answer": "A co-processor supplements the primary CPU by performing specialized functions like floating-point arithmetic, graphics processing, or digital signal processing.\n\nFlashcard 3:",
+    "source_pages": [
+      20,
+      21,
+      22
+    ],
+    "tags": [
+      "page-20-21-22",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "How do multi-core CPUs enhance computational performance?",
+    "answer": "Multi-core CPUs distribute workload across multiple cores, improving performance significantly, especially when applications are designed to take advantage of parallel processing.\n\nFlashcard 4:",
+    "source_pages": [
+      20,
+      21,
+      22
+    ],
+    "tags": [
+      "page-20-21-22",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What distinguishes a GPU from a CPU in terms of architecture and functionality?",
+    "answer": "A GPU has a massively parallel architecture with thousands of smaller cores designed for handling multiple tasks simultaneously, making it highly efficient for processing large blocks of visual data.\n\nFlashcard 5:",
+    "source_pages": [
+      20,
+      21,
+      22
+    ],
+    "tags": [
+      "page-20-21-22",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "Why did Google's DeepMind AlphaGo program require a significant number of processors and GPUs?",
+    "answer": "AlphaGo utilized 1,920 processors and 280 GPUs to process complex calculations and analyze vast amounts of data for predicting moves in the game of Go, which is far more complex than chess.",
+    "source_pages": [
+      20,
+      21,
+      22
+    ],
+    "tags": [
+      "page-20-21-22",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What was the significance of Google's DeepMind AlphaGo program?",
+    "answer": "It was the first computer program to defeat a human player at the game of Go.\n\nFlashcard 2",
+    "source_pages": [
+      22,
+      23,
+      24,
+      25
+    ],
+    "tags": [
+      "page-22-23-24-25",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "How does AlphaGo utilize computing power?",
+    "answer": "AlphaGo runs on Google\u2019s cloud computer network, using 1,920 processors and 280 GPUs.\n\nFlashcard 3",
+    "source_pages": [
+      22,
+      23,
+      24,
+      25
+    ],
+    "tags": [
+      "page-22-23-24-25",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the two types of barcodes mentioned in the text, and how do they differ?",
+    "answer": "Linear barcodes (1D) and 2D barcodes (like QR codes); 2D barcodes can hold more information than 1D barcodes.\n\nFlashcard 4",
+    "source_pages": [
+      22,
+      23,
+      24,
+      25
+    ],
+    "tags": [
+      "page-22-23-24-25",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "Name the four types of barcode readers and their basic technology.",
+    "answer": "The four types are pen-type readers, laser scanners, CCD readers, and camera-based readers, each using different technologies for reading and decoding barcodes.\n\nFlashcard 5",
+    "source_pages": [
+      22,
+      23,
+      24,
+      25
+    ],
+    "tags": [
+      "page-22-23-24-25",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is one advantage of pen-type barcode scanners?",
+    "answer": "They are durable and can be tightly sealed against dust and dirt due to their simple design, making them suitable for low-volume scanning applications.",
+    "source_pages": [
+      22,
+      23,
+      24,
+      25
+    ],
+    "tags": [
+      "page-22-23-24-25",
+      "cs",
+      "textbook"
+    ]
+  }
+]

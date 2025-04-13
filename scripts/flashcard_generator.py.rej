@@ -1,0 +1,15 @@
+--- flashcard_generator.py
++++ flashcard_generator.py
+@@ -926,7 +928,11 @@
+     progress = reconstruct_objects(progress)
+     
+     # Initialize Azure AI Inference client
+-    client = inference.Client()
++    endpoint = "https://models.inference.ai.azure.com"
++    token = os.environ.get("GITHUB_TOKEN")  # Should be set in GitHub Actions
++    client = ChatCompletionsClient(
++        endpoint=endpoint,
++        credential=AzureKeyCredential(token))
+     
+     # If already completed, just export the results again
+     if progress["completed"]:

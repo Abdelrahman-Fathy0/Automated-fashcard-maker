@@ -34,7 +34,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          python comprehensive_flashcard_generator.py pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf --max-requests 100
+          python comprehensive_flashcard_generator.py pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf --max-requests 140
           mkdir -p progress
       
       - name: Save progress

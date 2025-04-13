@@ -1,0 +1,6 @@
+PDF File: pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf
+Model: meta/llama-3-8b-instruct
+Cards per chunk: 5
+Format: basic
+Started at: 20250410-161718
+Max chunks: 10

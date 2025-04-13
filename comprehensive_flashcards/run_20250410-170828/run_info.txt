@@ -1,0 +1,3 @@
+PDF File: pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf
+Model: gpt-4o-mini
+Started at: 20250410-170828

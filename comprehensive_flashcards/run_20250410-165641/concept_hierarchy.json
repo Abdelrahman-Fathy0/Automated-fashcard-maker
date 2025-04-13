@@ -1,0 +1,709 @@
+{
+  "concepts": {
+    "Components of a computer": {
+      "name": "Components of a computer",
+      "parent": null,
+      "children": [
+        "Processor components",
+        "Processor performance",
+        "Types of processor",
+        "Input devices",
+        "Output devices",
+        "Storage devices",
+        "Processor components",
+        "Processor performance",
+        "Types of processor",
+        "Input devices",
+        "Output devices",
+        "Storage devices"
+      ],
+      "importance": 10,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Processor components": {
+      "name": "Processor components",
+      "parent": "Components of a computer",
+      "children": [
+        "Arithmetic Logic Unit (ALU)",
+        "Registers"
+      ],
+      "importance": 10,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Processor performance": {
+      "name": "Processor performance",
+      "parent": "Components of a computer",
+      "children": [],
+      "importance": 9,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Types of processor": {
+      "name": "Types of processor",
+      "parent": "Components of a computer",
+      "children": [],
+      "importance": 8,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Input devices": {
+      "name": "Input devices",
+      "parent": "Components of a computer",
+      "children": [],
+      "importance": 7,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Output devices": {
+      "name": "Output devices",
+      "parent": "Components of a computer",
+      "children": [],
+      "importance": 7,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Storage devices": {
+      "name": "Storage devices",
+      "parent": "Components of a computer",
+      "children": [],
+      "importance": 8,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Systems software": {
+      "name": "Systems software",
+      "parent": null,
+      "children": [
+        "Functions of an operating system",
+        "Types of operating system"
+      ],
+      "importance": 9,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Functions of an operating system": {
+      "name": "Functions of an operating system",
+      "parent": "Systems software",
+      "children": [],
+      "importance": 9,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Types of operating system": {
+      "name": "Types of operating system",
+      "parent": "Systems software",
+      "children": [],
+      "importance": 8,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Software development": {
+      "name": "Software development",
+      "parent": null,
+      "children": [
+        "Writing and following algorithms",
+        "Writing and following algorithms"
+      ],
+      "importance": 9,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Writing and following algorithms": {
+      "name": "Writing and following algorithms",
+      "parent": "Software development",
+      "children": [],
+      "importance": 8,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Exchanging data": {
+      "name": "Exchanging data",
+      "parent": null,
+      "children": [
+        "Database concepts",
+        "Database concepts"
+      ],
+      "importance": 8,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Database concepts": {
+      "name": "Database concepts",
+      "parent": "Exchanging data",
+      "children": [
+        "SQL",
+        "SQL"
+      ],
+      "importance": 8,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "SQL": {
+      "name": "SQL",
+      "parent": "Database concepts",
+      "children": [],
+      "importance": 9,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    },
+    "Central Processing Unit (CPU)": {
+      "name": "Central Processing Unit (CPU)",
+      "parent": null,
+      "children": [
+        "Control Unit",
+        "Arithmetic Logic Unit (ALU)",
+        "Buses",
+        "Registers",
+        "Control Unit",
+        "Arithmetic Logic Unit (ALU)",
+        "Buses",
+        "Registers",
+        "Fetch-Execute Cycle"
+      ],
+      "importance": 10,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "Control Unit": {
+      "name": "Control Unit",
+      "parent": "Central Processing Unit (CPU)",
+      "children": [],
+      "importance": 9,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "Arithmetic Logic Unit (ALU)": {
+      "name": "Arithmetic Logic Unit (ALU)",
+      "parent": "Central Processing Unit (CPU)",
+      "children": [],
+      "importance": 9,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "Buses": {
+      "name": "Buses",
+      "parent": "Central Processing Unit (CPU)",
+      "children": [
+        "Data Bus",
+        "Address Bus",
+        "Control Bus",
+        "Data Bus",
+        "Address Bus",
+        "Control Bus"
+      ],
+      "importance": 8,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "Data Bus": {
+      "name": "Data Bus",
+      "parent": "System Bus",
+      "children": [],
+      "importance": 9,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "Address Bus": {
+      "name": "Address Bus",
+      "parent": "System Bus",
+      "children": [],
+      "importance": 9,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "Control Bus": {
+      "name": "Control Bus",
+      "parent": "System Bus",
+      "children": [
+        "Bus Request",
+        "Bus Grant",
+        "Memory Write",
+        "Memory Read",
+        "Interrupt Request",
+        "Clock",
+        "Bus Request",
+        "Bus Grant",
+        "Memory Write",
+        "Memory Read",
+        "Interrupt Request",
+        "Clock"
+      ],
+      "importance": 9,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "Registers": {
+      "name": "Registers",
+      "parent": "Central Processing Unit (CPU)",
+      "children": [
+        "Program Counter",
+        "Accumulator",
+        "Memory Address Register",
+        "Memory Data Register",
+        "Current Instruction Register",
+        "Program Counter (PC)",
+        "Current Instruction Register (CIR)",
+        "Memory Address Register (MAR)",
+        "Memory Data Register (MDR)",
+        "Program Counter",
+        "Accumulator",
+        "Memory Address Register",
+        "Memory Data Register",
+        "Current Instruction Register",
+        "Program Counter (PC)",
+        "Current Instruction Register (CIR)",
+        "Memory Address Register (MAR)",
+        "Memory Data Register (MDR)"
+      ],
+      "importance": 9,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "Program Counter": {
+      "name": "Program Counter",
+      "parent": "Registers",
+      "children": [],
+      "importance": 8,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "Accumulator": {
+      "name": "Accumulator",
+      "parent": "Registers",
+      "children": [],
+      "importance": 8,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    "Memory Address Register": {
+      "name": "Memory Address Register",
+      "parent": "Registers",
+      "children": [],
+      "importance": 7,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "Memory Data Register": {
+      "name": "Memory Data Register",
+      "parent": "Registers",
+      "children": [],
+      "importance": 7,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "Current Instruction Register": {
+      "name": "Current Instruction Register",
+      "parent": "Registers",
+      "children": [],
+      "importance": 7,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "Fetch-Execute Cycle": {
+      "name": "Fetch-Execute Cycle",
+      "parent": "Central Processing Unit (CPU)",
+      "children": [],
+      "importance": 9,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ]
+    },
+    "System Bus": {
+      "name": "System Bus",
+      "parent": null,
+      "children": [
+        "Data Bus",
+        "Address Bus",
+        "Control Bus"
+      ],
+      "importance": 10,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Bus Request": {
+      "name": "Bus Request",
+      "parent": "Control Bus",
+      "children": [],
+      "importance": 7,
+      "type": "SUPPLEMENTARY",
+      "covered": false,
+      "source_pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Bus Grant": {
+      "name": "Bus Grant",
+      "parent": "Control Bus",
+      "children": [],
+      "importance": 7,
+      "type": "SUPPLEMENTARY",
+      "covered": false,
+      "source_pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Memory Write": {
+      "name": "Memory Write",
+      "parent": "Control Bus",
+      "children": [],
+      "importance": 8,
+      "type": "SUPPLEMENTARY",
+      "covered": false,
+      "source_pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Memory Read": {
+      "name": "Memory Read",
+      "parent": "Control Bus",
+      "children": [],
+      "importance": 8,
+      "type": "SUPPLEMENTARY",
+      "covered": false,
+      "source_pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Interrupt Request": {
+      "name": "Interrupt Request",
+      "parent": "Control Bus",
+      "children": [],
+      "importance": 7,
+      "type": "SUPPLEMENTARY",
+      "covered": false,
+      "source_pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Clock": {
+      "name": "Clock",
+      "parent": "Control Bus",
+      "children": [],
+      "importance": 7,
+      "type": "SUPPLEMENTARY",
+      "covered": false,
+      "source_pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Arithmetic-Logic Unit (ALU)": {
+      "name": "Arithmetic-Logic Unit (ALU)",
+      "parent": null,
+      "children": [],
+      "importance": 9,
+      "type": "CORE",
+      "covered": false,
+      "source_pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Program Counter (PC)": {
+      "name": "Program Counter (PC)",
+      "parent": "Registers",
+      "children": [],
+      "importance": 8,
+      "type": "SUPPLEMENTARY",
+      "covered": false,
+      "source_pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Current Instruction Register (CIR)": {
+      "name": "Current Instruction Register (CIR)",
+      "parent": "Registers",
+      "children": [],
+      "importance": 8,
+      "type": "SUPPLEMENTARY",
+      "covered": false,
+      "source_pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Memory Address Register (MAR)": {
+      "name": "Memory Address Register (MAR)",
+      "parent": "Registers",
+      "children": [],
+      "importance": 8,
+      "type": "SUPPLEMENTARY",
+      "covered": false,
+      "source_pages": [
+        10,
+        11,
+        12
+      ]
+    },
+    "Memory Data Register (MDR)": {
+      "name": "Memory Data Register (MDR)",
+      "parent": "Registers",
+      "children": [],
+      "importance": 8,
+      "type": "SUPPLEMENTARY",
+      "covered": false,
+      "source_pages": [
+        10,
+        11,
+        12
+      ]
+    }
+  },
+  "roots": [
+    "Components of a computer",
+    "Systems software",
+    "Software development",
+    "Exchanging data",
+    "Central Processing Unit (CPU)",
+    "System Bus",
+    "Arithmetic-Logic Unit (ALU)"
+  ]
+}

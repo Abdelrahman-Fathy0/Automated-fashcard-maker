@@ -1,0 +1,53 @@
+--- scripts/flashcard_generator.py
++++ scripts/flashcard_generator.py
+@@ -11,7 +11,9 @@
+ from collections import defaultdict
+ 
+ # Azure AI Inference SDK imports
+-import azure.ai.inference as inference
++from azure.ai.inference import ChatCompletionsClient
++from azure.ai.inference.models import SystemMessage, UserMessage
++from azure.core.credentials import AzureKeyCredential
+ 
+ # Create output directories
+ OUTPUT_DIR = "comprehensive_flashcards"
+@@ -924,7 +926,11 @@
+     progress = reconstruct_objects(progress)
+     
+     # Initialize Azure AI Inference client
+-    client = inference.Client()
++    endpoint = "https://models.inference.ai.azure.com"
++    token = os.environ.get("GITHUB_TOKEN")  # Should be set in GitHub Actions
++    client = ChatCompletionsClient(
++        endpoint=endpoint,
++        credential=AzureKeyCredential(token))
+     
+     # If already completed, just export the results again
+     if progress["completed"]:
+@@ -1046,7 +1052,7 @@
+     try:
+         # Call the client to analyze the content
+         response = client.chat_completions.create(
+-            model=model_name,
++            model=model_name,
+             messages=[{"role": "user", "content": prompt}],
+             temperature=0.2  # Lower temperature for more consistent analysis
+         )
+@@ -1124,7 +1130,7 @@
+     try:
+         # Call the client to generate flashcards
+         response = client.chat_completions.create(
+-            model=model_name,
++            model=model_name,
+             messages=[{"role": "user", "content": prompt}],
+             temperature=0.7
+         )
+@@ -1226,7 +1232,7 @@
+         try:
+             # Call the client to generate supplementary flashcards
+             response = client.chat_completions.create(
+-                model=model_name,
++                model=model_name,
+                 messages=[{"role": "user", "content": prompt}],
+                 temperature=0.7
+             )

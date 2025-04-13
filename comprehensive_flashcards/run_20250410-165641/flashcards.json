@@ -1,0 +1,1775 @@
+[
+  {
+    "question": "What are the main components of a computer?",
+    "answer": "Processor components, Input devices, Output devices, Storage devices.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 10,
+    "concept": "Components of a computer",
+    "concept_path": [
+      "Components of a computer"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Processor components",
+      "Input devices",
+      "Output devices",
+      "Storage devices"
+    ]
+  },
+  {
+    "question": "What is the role of the Arithmetic Logic Unit (ALU) in a CPU?",
+    "answer": "It performs arithmetic and logical operations.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Arithmetic Logic Unit (ALU)",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Arithmetic Logic Unit (ALU)"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Processor components",
+      "Central Processing Unit (CPU)"
+    ]
+  },
+  {
+    "question": "What are the different types of registers in a CPU?",
+    "answer": "Program Counter, Accumulator, Memory Address Register, Memory Data Register, Current Instruction Register.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Registers",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Central Processing Unit (CPU)",
+      "Processor components"
+    ]
+  },
+  {
+    "question": "What does the Program Counter (PC) do?",
+    "answer": "It holds the address of the next instruction to be executed.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Program Counter",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Program Counter"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Registers",
+      "Central Processing Unit (CPU)"
+    ]
+  },
+  {
+    "question": "What is the function of the Accumulator in a CPU?",
+    "answer": "It stores intermediate results of arithmetic and logic operations.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Accumulator",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Accumulator"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Registers",
+      "Central Processing Unit (CPU)"
+    ]
+  },
+  {
+    "question": "What does the Memory Address Register (MAR) do?",
+    "answer": "It holds the address of data that needs to be accessed from memory.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Memory Address Register (MAR)",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Memory Address Register (MAR)"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Registers",
+      "Central Processing Unit (CPU)"
+    ]
+  },
+  {
+    "question": "What is the function of the Memory Data Register (MDR)?",
+    "answer": "It holds the data being transferred to or from memory.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Memory Data Register (MDR)",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Memory Data Register (MDR)"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Registers",
+      "Central Processing Unit (CPU)"
+    ]
+  },
+  {
+    "question": "What does the Current Instruction Register (CIR) do?",
+    "answer": "It holds the instruction currently being executed.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Current Instruction Register (CIR)",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Current Instruction Register (CIR)"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Registers",
+      "Central Processing Unit (CPU)"
+    ]
+  },
+  {
+    "question": "What factors affect processor performance?",
+    "answer": "Clock speed, number of cores, cache size, and instruction set architecture.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Processor performance",
+    "concept_path": [
+      "Components of a computer",
+      "Processor performance"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Components of a computer"
+    ]
+  },
+  {
+    "question": "What are the main types of input devices?",
+    "answer": "Keyboard, mouse, scanner, microphone.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 7,
+    "concept": "Input devices",
+    "concept_path": [
+      "Components of a computer",
+      "Input devices"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Components of a computer"
+    ]
+  },
+  {
+    "question": "What are common output devices?",
+    "answer": "Monitor, printer, speakers.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 7,
+    "concept": "Output devices",
+    "concept_path": [
+      "Components of a computer",
+      "Output devices"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Components of a computer"
+    ]
+  },
+  {
+    "question": "What types of storage devices are there?",
+    "answer": "Hard drives, SSDs, USB flash drives, optical discs.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Storage devices",
+    "concept_path": [
+      "Components of a computer",
+      "Storage devices"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Components of a computer"
+    ]
+  },
+  {
+    "question": "What are the main functions of an operating system?",
+    "answer": "Managing hardware resources, providing a user interface, managing files and processes.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Functions of an operating system",
+    "concept_path": [
+      "Systems software",
+      "Functions of an operating system"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Systems software"
+    ]
+  },
+  {
+    "question": "What are the types of operating systems?",
+    "answer": "Batch, time-sharing, distributed, embedded, real-time.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Types of operating system",
+    "concept_path": [
+      "Systems software",
+      "Types of operating system"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Systems software"
+    ]
+  },
+  {
+    "question": "What is the purpose of writing and following algorithms in software development?",
+    "answer": "To provide a clear set of instructions for solving problems.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Writing and following algorithms",
+    "concept_path": [
+      "Software development",
+      "Writing and following algorithms"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Software development"
+    ]
+  },
+  {
+    "question": "What is pseudocode?",
+    "answer": "A method for designing algorithms using a structured, human-readable format.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Pseudocode",
+    "concept_path": [],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Writing and following algorithms",
+      "Software development"
+    ]
+  },
+  {
+    "question": "What are database concepts?",
+    "answer": "Fundamental ideas about how data is stored, managed, and manipulated.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Database concepts",
+    "concept_path": [
+      "Exchanging data",
+      "Database concepts"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Exchanging data"
+    ]
+  },
+  {
+    "question": "What is SQL?",
+    "answer": "Structured Query Language used for managing and querying relational databases.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "SQL",
+    "concept_path": [
+      "Exchanging data",
+      "Database concepts",
+      "SQL"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Database concepts",
+      "Exchanging data"
+    ]
+  },
+  {
+    "question": "What operations can be performed using SQL?",
+    "answer": "Creating, updating, deleting, and querying data in databases.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "SQL operations",
+    "concept_path": [],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "SQL",
+      "Database concepts"
+    ]
+  },
+  {
+    "question": "What is the purpose of data compression?",
+    "answer": "To reduce the size of data for storage or transmission.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Compression",
+    "concept_path": [],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Exchanging data"
+    ]
+  },
+  {
+    "question": "What is encryption?",
+    "answer": "The process of converting data into a coded format to prevent unauthorized access.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Encryption",
+    "concept_path": [],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Exchanging data"
+    ]
+  },
+  {
+    "question": "What is hashing in the context of data security?",
+    "answer": "A process of converting data into a fixed-size string of characters, which is typically a hash value.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Hashing",
+    "concept_path": [],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Exchanging data"
+    ]
+  },
+  {
+    "question": "What is the role of a database in data exchange?",
+    "answer": "To store, retrieve, and manage data efficiently.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Database in data exchange",
+    "concept_path": [],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Exchanging data"
+    ]
+  },
+  {
+    "question": "What is relational database normalization?",
+    "answer": "The process of organizing data to reduce redundancy and improve data integrity.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Relational databases and normalization",
+    "concept_path": [],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Database concepts"
+    ]
+  },
+  {
+    "question": "What is transaction processing in databases?",
+    "answer": "The management of data changes that ensure data integrity and consistency.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Transaction processing",
+    "concept_path": [],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Database concepts"
+    ]
+  },
+  {
+    "question": "What are the main components of systems software?",
+    "answer": "Operating systems, utility software, and application software.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Systems software",
+    "concept_path": [
+      "Systems software"
+    ],
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook",
+      "Software development"
+    ]
+  },
+  {
+    "question": "What are the main components of the Central Processing Unit (CPU)?",
+    "answer": "The main components of the CPU are the Control Unit, Arithmetic Logic Unit (ALU), buses, and dedicated registers.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 10,
+    "concept": "Central Processing Unit (CPU)",
+    "concept_path": [
+      "Central Processing Unit (CPU)"
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook",
+      "Control Unit",
+      "Arithmetic Logic Unit (ALU)",
+      "Registers",
+      "Buses"
+    ]
+  },
+  {
+    "question": "What is the role of the Control Unit in the CPU?",
+    "answer": "The Control Unit directs the flow of data between the CPU and other devices, manages instruction execution, and coordinates activities of the CPU.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 9,
+    "concept": "Control Unit",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Control Unit"
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook",
+      "CPU",
+      "Instruction Execution"
+    ]
+  },
+  {
+    "question": "What does the Arithmetic Logic Unit (ALU) do?",
+    "answer": "The ALU performs arithmetic and logic operations on data.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 9,
+    "concept": "Arithmetic Logic Unit (ALU)",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Arithmetic Logic Unit (ALU)"
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook",
+      "CPU",
+      "Operations"
+    ]
+  },
+  {
+    "question": "What are the three types of buses in a computer system?",
+    "answer": "The three types of buses are the data bus, address bus, and control bus.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 8,
+    "concept": "Buses",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Buses"
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook",
+      "System Bus",
+      "Data Bus",
+      "Address Bus",
+      "Control Bus"
+    ]
+  },
+  {
+    "question": "What is the function of the data bus?",
+    "answer": "The data bus transmits data between the CPU and other components.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 9,
+    "concept": "Data Bus",
+    "concept_path": [
+      "System Bus",
+      "Data Bus"
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook",
+      "Buses",
+      "System Bus"
+    ]
+  },
+  {
+    "question": "What is the purpose of the address bus?",
+    "answer": "The address bus carries addresses from the CPU to memory or I/O devices.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 9,
+    "concept": "Address Bus",
+    "concept_path": [
+      "System Bus",
+      "Address Bus"
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook",
+      "Buses",
+      "Data Transfer"
+    ]
+  },
+  {
+    "question": "What does the control bus do?",
+    "answer": "The control bus carries control signals between the CPU and other components to manage operations.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 9,
+    "concept": "Control Bus",
+    "concept_path": [
+      "System Bus",
+      "Control Bus"
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook",
+      "Buses",
+      "Control Signals"
+    ]
+  },
+  {
+    "question": "What is the Fetch-Execute Cycle?",
+    "answer": "The Fetch-Execute Cycle is the process where the CPU fetches an instruction from memory, decodes it, executes it, and stores the result.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 9,
+    "concept": "Fetch-Execute Cycle",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Fetch-Execute Cycle"
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook",
+      "CPU",
+      "Instruction Execution"
+    ]
+  },
+  {
+    "question": "What is the function of the Program Counter (PC)?",
+    "answer": "The Program Counter holds the address of the next instruction to be executed.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 8,
+    "concept": "Program Counter",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Program Counter"
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook",
+      "Registers",
+      "Fetch-Execute Cycle"
+    ]
+  },
+  {
+    "question": "What is the role of the Accumulator in the CPU?",
+    "answer": "The Accumulator stores intermediate results of arithmetic and logic operations.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 8,
+    "concept": "Accumulator",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Accumulator"
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook",
+      "Registers",
+      "ALU"
+    ]
+  },
+  {
+    "question": "What does the Memory Address Register (MAR) do?",
+    "answer": "The MAR holds the address of the memory location that the CPU wants to access.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 7,
+    "concept": "Memory Address Register (MAR)",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Memory Address Register (MAR)"
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook",
+      "Registers",
+      "Memory Access"
+    ]
+  },
+  {
+    "question": "What is the purpose of the Memory Data Register (MDR)?",
+    "answer": "The MDR holds the data that is being transferred to or from memory.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 7,
+    "concept": "Memory Data Register (MDR)",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Memory Data Register (MDR)"
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook",
+      "Registers",
+      "Data Transfer"
+    ]
+  },
+  {
+    "question": "What does the Current Instruction Register (CIR) do?",
+    "answer": "The CIR holds the instruction that is currently being executed by the CPU.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 7,
+    "concept": "Current Instruction Register (CIR)",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Current Instruction Register (CIR)"
+    ],
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook",
+      "Registers",
+      "Instruction Execution"
+    ]
+  },
+  {
+    "question": "What is the system bus in a computer architecture?",
+    "answer": "The system bus is a shared transmission medium that connects the processor, memory, and I/O controllers, consisting of a data bus, address bus, and control bus.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 10,
+    "concept": "System Bus",
+    "concept_path": [
+      "System Bus"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "Data Bus",
+      "Address Bus",
+      "Control Bus"
+    ]
+  },
+  {
+    "question": "What is the function of the data bus?",
+    "answer": "The data bus provides a bi-directional path for moving data and instructions between system components.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 9,
+    "concept": "Data Bus",
+    "concept_path": [
+      "System Bus",
+      "Data Bus"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "System Bus"
+    ]
+  },
+  {
+    "question": "What is the role of the address bus in a computer system?",
+    "answer": "The address bus transmits memory addresses of words used as operands in program instructions, allowing data retrieval and storage.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 9,
+    "concept": "Address Bus",
+    "concept_path": [
+      "System Bus",
+      "Address Bus"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "System Bus"
+    ]
+  },
+  {
+    "question": "What is the purpose of the control bus?",
+    "answer": "The control bus transmits command, timing, and specific status information between system components.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 9,
+    "concept": "Control Bus",
+    "concept_path": [
+      "System Bus",
+      "Control Bus"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "System Bus"
+    ]
+  },
+  {
+    "question": "What does the Bus Request signal indicate?",
+    "answer": "The Bus Request signal indicates that a device is requesting the use of the data bus.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 7,
+    "concept": "Bus Request",
+    "concept_path": [
+      "System Bus",
+      "Control Bus",
+      "Bus Request"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "Control Bus"
+    ]
+  },
+  {
+    "question": "What does the Bus Grant signal signify?",
+    "answer": "The Bus Grant signal indicates that the CPU has granted access to the data bus.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 7,
+    "concept": "Bus Grant",
+    "concept_path": [
+      "System Bus",
+      "Control Bus",
+      "Bus Grant"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "Control Bus"
+    ]
+  },
+  {
+    "question": "What is the function of the Memory Write signal?",
+    "answer": "The Memory Write signal causes data on the data bus to be written into the addressed location.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 8,
+    "concept": "Memory Write",
+    "concept_path": [
+      "System Bus",
+      "Control Bus",
+      "Memory Write"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "Control Bus"
+    ]
+  },
+  {
+    "question": "What does the Memory Read signal do?",
+    "answer": "The Memory Read signal causes data from the addressed location to be placed on the data bus.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 8,
+    "concept": "Memory Read",
+    "concept_path": [
+      "System Bus",
+      "Control Bus",
+      "Memory Read"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "Control Bus"
+    ]
+  },
+  {
+    "question": "What is the role of the Arithmetic-Logic Unit (ALU)?",
+    "answer": "The ALU performs arithmetic and logical operations on data, including operations like ADD, SUBTRACT, and logical comparisons.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 9,
+    "concept": "Arithmetic-Logic Unit (ALU)",
+    "concept_path": [
+      "Arithmetic-Logic Unit (ALU)"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "CPU",
+      "Registers"
+    ]
+  },
+  {
+    "question": "What is the function of the Program Counter (PC)?",
+    "answer": "The Program Counter holds the address of the next instruction to be executed.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 8,
+    "concept": "Program Counter (PC)",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Program Counter (PC)"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "Registers"
+    ]
+  },
+  {
+    "question": "What does the Current Instruction Register (CIR) contain?",
+    "answer": "The Current Instruction Register holds the current instruction being executed, divided into operand and opcode.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 8,
+    "concept": "Current Instruction Register (CIR)",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Current Instruction Register (CIR)"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "Registers"
+    ]
+  },
+  {
+    "question": "What is the purpose of the Memory Address Register (MAR)?",
+    "answer": "The Memory Address Register holds the address of the memory location from which data or instructions are fetched or to which data is written.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 8,
+    "concept": "Memory Address Register (MAR)",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Memory Address Register (MAR)"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "Registers"
+    ]
+  },
+  {
+    "question": "What does the Memory Data Register (MDR) do?",
+    "answer": "The Memory Data Register temporarily stores the data read from or written to memory, sometimes known as the memory buffer register.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 8,
+    "concept": "Memory Data Register (MDR)",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Memory Data Register (MDR)"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "Registers"
+    ]
+  },
+  {
+    "question": "What are registers in the context of a CPU?",
+    "answer": "Registers are special memory cells within the CPU that operate at high speed to temporarily hold data during processing.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 9,
+    "concept": "Registers",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers"
+    ],
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook",
+      "CPU",
+      "ALU"
+    ]
+  },
+  {
+    "question": "What are the main components of a processor and their roles?",
+    "answer": "The main components of a processor are the Arithmetic Logic Unit (ALU), which performs arithmetic and logical operations, and registers, which are small storage locations used to hold temporary data and instructions for the CPU.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Processor components",
+    "concept_path": [
+      "Components of a computer",
+      "Processor components"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-1-2-3-4-5"
+    ]
+  },
+  {
+    "question": "What are the different types of processors and how do they differ?",
+    "answer": "Types of processors include single-core, multi-core, and dual-core processors. They differ in the number of execution units they contain, affecting their ability to perform simultaneous tasks and overall performance.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Types of processor",
+    "concept_path": [
+      "Components of a computer",
+      "Types of processor"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-1-2-3-4-5"
+    ]
+  },
+  {
+    "question": "How does the Arithmetic Logic Unit (ALU) contribute to the function of a processor?",
+    "answer": "The ALU performs all arithmetic (addition, subtraction) and logical (AND, OR, NOT) operations, making it essential for executing instructions and processing data within the CPU.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Processor components",
+    "concept_path": [
+      "Components of a computer",
+      "Processor components"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-1-2-3-4-5"
+    ]
+  },
+  {
+    "question": "What distinguishes a multi-core processor from a single-core processor?",
+    "answer": "A multi-core processor contains multiple processing units (cores) on a single chip, allowing it to perform multiple tasks simultaneously, while a single-core processor can only handle one task at a time.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Types of processor",
+    "concept_path": [
+      "Components of a computer",
+      "Types of processor"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-1-2-3-4-5"
+    ]
+  },
+  {
+    "question": "What is the role of registers in a processor's operation?",
+    "answer": "Registers are small, fast storage locations within the CPU that hold data and instructions temporarily during processing, allowing for quick access and manipulation by the ALU and other components.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Processor components",
+    "concept_path": [
+      "Components of a computer",
+      "Processor components"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-1-2-3-4-5"
+    ]
+  },
+  {
+    "question": "What are the main types of processors and how do they differ in functionality?",
+    "answer": "The main types of processors include Central Processing Units (CPUs), Graphics Processing Units (GPUs), Digital Signal Processors (DSPs), and Application-Specific Integrated Circuits (ASICs). CPUs are general-purpose processors, GPUs are optimized for parallel processing of graphics, DSPs are tailored for signal processing tasks, and ASICs are custom-designed for specific applications.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Types of processor",
+    "concept_path": [
+      "Components of a computer",
+      "Types of processor"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-1-2-3-4-5"
+    ]
+  },
+  {
+    "question": "What are the key components of software development and why are algorithms important?",
+    "answer": "The key components of software development include writing and following algorithms, which are essential for solving problems systematically. Algorithms provide a step-by-step procedure for computation and are the foundation for programming and software design.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Software development",
+    "concept_path": [
+      "Software development"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-1-2-3-4-5"
+    ]
+  },
+  {
+    "question": "What are the foundational concepts of exchanging data in computer systems?",
+    "answer": "Foundational concepts of exchanging data include database concepts such as data storage, retrieval, and management. Understanding how databases facilitate the exchange of information is critical for effective data communication between applications.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 7,
+    "concept": "Exchanging data",
+    "concept_path": [
+      "Exchanging data"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-1-2-3-4-5"
+    ]
+  },
+  {
+    "question": "What is an Interrupt Request and how does it function within a control bus?",
+    "answer": "An Interrupt Request (IRQ) is a signal sent to the processor indicating that an event needs immediate attention. It allows hardware devices to communicate with the CPU and interrupt its current processes, ensuring timely responses to critical events.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 8,
+    "concept": "Interrupt Request",
+    "concept_path": [
+      "System Bus",
+      "Control Bus",
+      "Interrupt Request"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-10-11-12"
+    ]
+  },
+  {
+    "question": "What role does the clock play in the control bus of a computer system?",
+    "answer": "The clock in a control bus generates timing signals that synchronize the operations of various components within the computer. It ensures that all parts of the system operate in unison, coordinating data transfers and processing tasks.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 9,
+    "concept": "Clock",
+    "concept_path": [
+      "System Bus",
+      "Control Bus",
+      "Clock"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-10-11-12"
+    ]
+  },
+  {
+    "question": "What is an Interrupt Request and how does it function within the Control Bus?",
+    "answer": "An Interrupt Request is a signal sent to the CPU indicating that an event needs immediate attention. It allows the CPU to pause its current operations and handle the event, ensuring responsive system behavior.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 8,
+    "concept": "Interrupt Request",
+    "concept_path": [
+      "System Bus",
+      "Control Bus",
+      "Interrupt Request"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-10-11-12"
+    ]
+  },
+  {
+    "question": "What role does the Clock play in the Control Bus and how does it affect system operations?",
+    "answer": "The Clock generates timing signals that synchronize the operations of various components in the computer system, ensuring that data transfers and processing occur in a coordinated manner.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 9,
+    "concept": "Clock",
+    "concept_path": [
+      "System Bus",
+      "Control Bus",
+      "Clock"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-10-11-12"
+    ]
+  },
+  {
+    "question": "What is the function of the Memory Address Register (MAR) and its significance in the register architecture?",
+    "answer": "The Memory Address Register holds the address of the memory location to be accessed, either for reading or writing data. It is essential for directing the CPU to the correct memory location during operations.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 7,
+    "concept": "Memory Address Register",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Memory Address Register"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-5-6-7-8-9-10"
+    ]
+  },
+  {
+    "question": "Describe the purpose of the Memory Data Register (MDR) and its role within the register set.",
+    "answer": "The Memory Data Register temporarily holds data that is being transferred to or from the memory. It acts as a buffer during data transfers between the CPU and memory, ensuring efficient data handling.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 7,
+    "concept": "Memory Data Register",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Memory Data Register"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-5-6-7-8-9-10"
+    ]
+  },
+  {
+    "question": "What is the Current Instruction Register (CIR) and how does it contribute to instruction execution?",
+    "answer": "The Current Instruction Register holds the instruction currently being executed by the CPU. It is crucial for the CPU to decode and execute instructions in the correct sequence.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 8,
+    "concept": "Current Instruction Register",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Current Instruction Register"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-5-6-7-8-9-10"
+    ]
+  },
+  {
+    "question": "What is the role of the Memory Address Register (MAR) in a computer system?",
+    "answer": "The MAR holds the address of the memory location to be accessed, whether for reading or writing data. It plays a crucial role in the fetch-execute cycle of the CPU.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 8,
+    "concept": "Memory Address Register",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Memory Address Register"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-5-6-7-8-9-10"
+    ]
+  },
+  {
+    "question": "How does the Memory Data Register (MDR) function in relation to the Memory Address Register (MAR)?",
+    "answer": "The MDR temporarily holds the data that is being transferred to or from the memory location specified by the MAR. It acts as a buffer for data during memory operations.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 8,
+    "concept": "Memory Data Register",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Memory Data Register"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-5-6-7-8-9-10"
+    ]
+  },
+  {
+    "question": "What is the purpose of the Current Instruction Register (CIR) in the CPU?",
+    "answer": "The CIR holds the instruction currently being executed by the CPU. It is crucial for decoding and executing instructions as part of the instruction cycle.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 9,
+    "concept": "Current Instruction Register",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Current Instruction Register"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-5-6-7-8-9-10"
+    ]
+  },
+  {
+    "question": "What role does the Current Instruction Register (CIR) play in the execution of instructions within a CPU?",
+    "answer": "The Current Instruction Register holds the instruction that is currently being executed by the CPU, ensuring that the control unit can decode and execute it properly.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 9,
+    "concept": "Current Instruction Register",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Current Instruction Register"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-5-6-7-8-9-10"
+    ]
+  },
+  {
+    "question": "How does the Current Instruction Register interact with other registers in the CPU?",
+    "answer": "The Current Instruction Register works closely with the Program Counter (PC), which points to the next instruction to be fetched, while the CIR holds the instruction currently being executed.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 8,
+    "concept": "Current Instruction Register",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Current Instruction Register"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-5-6-7-8-9-10"
+    ]
+  },
+  {
+    "question": "Why is the Current Instruction Register essential for the operation of the control unit in a CPU?",
+    "answer": "The CIR is essential because it allows the control unit to retrieve, decode, and execute the instruction currently in process, functioning as a critical link in the instruction execution cycle.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 10,
+    "concept": "Current Instruction Register",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Current Instruction Register"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-5-6-7-8-9-10"
+    ]
+  },
+  {
+    "question": "In what way does the Current Instruction Register differ from the Memory Address Register (MAR)?",
+    "answer": "The Current Instruction Register holds the instruction being executed, while the Memory Address Register holds the address of the memory location to be accessed, thus serving different functions in the CPU.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 7,
+    "concept": "Current Instruction Register",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Current Instruction Register"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-5-6-7-8-9-10"
+    ]
+  },
+  {
+    "question": "How does the size of the Current Instruction Register influence the types of instructions a CPU can execute?",
+    "answer": "The size of the Current Instruction Register determines the maximum length of instructions that can be processed, affecting the complexity and capability of the instruction set architecture.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 6,
+    "concept": "Current Instruction Register",
+    "concept_path": [
+      "Central Processing Unit (CPU)",
+      "Registers",
+      "Current Instruction Register"
+    ],
+    "tags": [
+      "cs",
+      "textbook",
+      "supplementary",
+      "page-5-6-7-8-9-10"
+    ]
+  }
+]

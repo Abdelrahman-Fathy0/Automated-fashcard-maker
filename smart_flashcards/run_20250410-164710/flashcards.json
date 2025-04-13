@@ -1,0 +1,850 @@
+[
+  {
+    "question": "What are the main components of the Central Processing Unit (CPU)?",
+    "answer": "The main components of the CPU include the control unit, arithmetic/logic unit (ALU), buses, and dedicated registers.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 10,
+    "concept": "Central Processing Unit (CPU)",
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "Describe the Fetch-Execute cycle.",
+    "answer": "The Fetch-Execute cycle consists of fetching an instruction from memory, decoding it, executing it, and then storing the result back in memory or registers.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 10,
+    "concept": "Fetch-Execute Cycle",
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the Fetch-Execute cycle?",
+    "answer": "The Fetch-Execute cycle is the process by which the CPU retrieves an instruction from memory, decodes it, and then executes it.",
+    "source_pages": [
+      14,
+      15
+    ],
+    "importance": 10,
+    "concept": "Fetch-Execute cycle",
+    "tags": [
+      "page-14-15",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "Describe the Fetch-Decode-Execute cycle.",
+    "answer": "It is a continuous process that involves fetching an instruction, decoding it, and executing it repeatedly for each instruction in a program.",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "importance": 10,
+    "concept": "Fetch-Decode-Execute Cycle",
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "At which stage of the Fetch-Decode-Execute cycle is the ALU used?",
+    "answer": "The ALU is used during the Execute phase of the cycle to perform operations on the operand.",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "importance": 10,
+    "concept": "Fetch-Decode-Execute Cycle",
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the main components of a processor?",
+    "answer": "The main components of a processor include the Arithmetic Logic Unit (ALU), Control Unit (CU), and registers.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Processor components",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "How is processor performance typically measured?",
+    "answer": "Processor performance is typically measured in terms of clock speed, instruction set architecture, and the number of cores.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Processor performance",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the key functions of an operating system?",
+    "answer": "Key functions of an operating system include managing hardware resources, providing a user interface, and executing applications.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Functions of an operating system",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the significance of writing and following algorithms?",
+    "answer": "Writing and following algorithms is significant as it provides a clear step-by-step procedure for solving problems and implementing solutions.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Writing and following algorithms",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the fundamental concepts of databases?",
+    "answer": "Fundamental concepts of databases include data storage, data retrieval, and data management using structured formats.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Database concepts",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is normalization in the context of relational databases?",
+    "answer": "Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Relational databases and normalisation",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is SQL and its primary purpose?",
+    "answer": "SQL, or Structured Query Language, is used for managing and manipulating relational databases.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 9,
+    "concept": "Introduction to SQL",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the role of the Control Unit in the CPU?",
+    "answer": "The Control Unit controls and coordinates the activities of the CPU, directing the flow of data between the CPU and other devices, decoding instructions, and managing execution.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 9,
+    "concept": "Control Unit",
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the function of the Arithmetic Logic Unit (ALU)?",
+    "answer": "The ALU performs arithmetic and logic operations as part of the CPU's function in executing instructions.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 9,
+    "concept": "Arithmetic Logic Unit (ALU)",
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the function of the Arithmetic Logic Unit (ALU)?",
+    "answer": "The ALU performs arithmetic and logic operations on the data.",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "importance": 9,
+    "concept": "Arithmetic Logic Unit (ALU)",
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the roles of the Program Counter and the Accumulator in the CPU?",
+    "answer": "The Program Counter holds the address of the next instruction to be executed, while the Accumulator temporarily stores data and results from arithmetic and logic operations.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 9,
+    "concept": "Registers",
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the purpose of registers in the CPU?",
+    "answer": "Registers are special memory cells that temporarily store results of arithmetic, logical, or shift operations at high speed.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 9,
+    "concept": "Registers",
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the purpose of buses in a computer system?",
+    "answer": "Buses are sets of parallel wires that connect components of a computer, allowing for the transfer of data, addresses, and control signals between the CPU, memory, and I/O devices.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 9,
+    "concept": "Buses",
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the three types of buses in a CPU system, and what is their function?",
+    "answer": "The three types of buses are the data bus (transfers data), address bus (transfers addresses), and control bus (transfers control signals) between the CPU, memory, and I/O devices.",
+    "source_pages": [
+      5,
+      6,
+      7,
+      8,
+      9,
+      10
+    ],
+    "importance": 9,
+    "concept": "Buses",
+    "tags": [
+      "page-5-6-7-8-9-10",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the three main buses that make up the system bus?",
+    "answer": "The three main buses are the control bus, data bus, and address bus.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 9,
+    "concept": "System Bus",
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the primary function of the control bus?",
+    "answer": "The control bus transmits command, timing, and specific status information between system components.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 9,
+    "concept": "Control Bus",
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "How is the data bus utilized in a computer system?",
+    "answer": "The data bus provides a bi-directional path for moving data and instructions between system components.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 9,
+    "concept": "Data Bus",
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the role of the address bus in memory operations?",
+    "answer": "The address bus transmits the memory addresses of words used as operands in program instructions.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 9,
+    "concept": "Address Bus",
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What types of operations does the Arithmetic-Logic Unit (ALU) perform?",
+    "answer": "The ALU performs arithmetic and logical operations, including ADD, SUBTRACT, MULTIPLY, DIVIDE, and Boolean logic operations.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 9,
+    "concept": "Arithmetic-Logic Unit (ALU)",
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "Explain the role of the Program Counter (PC) in the Fetch-Decode-Execute cycle.",
+    "answer": "The PC holds the address of the next instruction to be fetched and is incremented after each fetch.",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "importance": 9,
+    "concept": "Program Counter (PC)",
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the purpose of the Current Instruction Register (CIR)?",
+    "answer": "The CIR holds the instruction that is currently being executed.",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "importance": 9,
+    "concept": "Current Instruction Register (CIR)",
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the function of the Memory Address Register (MAR)?",
+    "answer": "The MAR holds the address of the next instruction to be fetched or the address to which data is to be written.",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "importance": 9,
+    "concept": "Memory Address Register (MAR)",
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What does the Memory Data Register (MDR) do?",
+    "answer": "The MDR temporarily stores the data read from or written to memory.",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "importance": 9,
+    "concept": "Memory Data Register (MDR)",
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the main components of a processor?",
+    "answer": "1. Control Unit, 2. Arithmetic Logic Unit, 3. Registers, 4. Cache, 5. Bus Interface Unit",
+    "source_pages": [
+      14,
+      15
+    ],
+    "importance": 9,
+    "concept": "Components of a processor",
+    "tags": [
+      "page-14-15",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "How does clock speed affect CPU performance?",
+    "answer": "Higher clock speed means the CPU can execute instructions faster, as operations are synchronized with the clock pulses.",
+    "source_pages": [
+      14,
+      15
+    ],
+    "importance": 9,
+    "concept": "Clock speed",
+    "tags": [
+      "page-14-15",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the significance of having multiple cores in a processor?",
+    "answer": "Multiple cores allow for parallel processing, enabling the CPU to execute multiple instructions simultaneously, potentially increasing performance.",
+    "source_pages": [
+      14,
+      15
+    ],
+    "importance": 9,
+    "concept": "Number of cores",
+    "tags": [
+      "page-14-15",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What role does cache memory play in processor performance?",
+    "answer": "Cache memory stores frequently accessed data and instructions, allowing the CPU to retrieve them more quickly than accessing main memory.",
+    "source_pages": [
+      14,
+      15
+    ],
+    "importance": 9,
+    "concept": "Cache memory",
+    "tags": [
+      "page-14-15",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the different types of processors?",
+    "answer": "The different types of processors include general-purpose processors, multi-core processors, and specialized processors like GPUs.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Types of processor",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the primary function of input devices?",
+    "answer": "The primary function of input devices is to allow users to input data and commands into a computer system.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Input devices",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What role do output devices play in a computer system?",
+    "answer": "Output devices convert computer data into a form understandable by users, such as visual display, sound, or printed output.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Output devices",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the main types of storage devices?",
+    "answer": "The main types of storage devices include hard drives, solid-state drives, and removable storage like USB flash drives.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Storage devices",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the different types of operating systems?",
+    "answer": "The different types of operating systems include batch, time-sharing, distributed, and embedded operating systems.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Types of operating system",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the purpose of a programming language translator?",
+    "answer": "The purpose of a programming language translator is to convert high-level programming languages into machine code that a computer can execute.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Programming language translators",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the function of compression in data management?",
+    "answer": "Compression reduces the size of data for storage efficiency and faster transmission over networks.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 8,
+    "concept": "Compression, encryption and hashing",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What does the Program Counter (PC) hold?",
+    "answer": "The Program Counter holds the address of the next instruction to be executed.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 8,
+    "concept": "Program Counter (PC)",
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the function of the Current Instruction Register (CIR)?",
+    "answer": "The CIR holds the current instruction being executed, divided into operand and opcode.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 8,
+    "concept": "Current Instruction Register (CIR)",
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What does the Memory Address Register (MAR) do?",
+    "answer": "The MAR holds the address of the memory location from which data or instructions are to be fetched or written.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 8,
+    "concept": "Memory Address Register (MAR)",
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the role of the Memory Data Register (MDR)?",
+    "answer": "The MDR temporarily stores the data read from or written to memory, also known as the memory buffer register.",
+    "source_pages": [
+      10,
+      11,
+      12
+    ],
+    "importance": 8,
+    "concept": "Memory Data Register (MDR)",
+    "tags": [
+      "page-10-11-12",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are opcode and operand in the context of instruction execution?",
+    "answer": "The opcode specifies the operation to be performed, while the operand specifies the data or address involved in the operation.",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "importance": 8,
+    "concept": "Opcode and Operand",
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "Why might a slower processor with larger cache outperform a faster processor with limited cache?",
+    "answer": "A larger cache can reduce the need to access slower main memory frequently, which can lead to better overall performance despite a lower clock speed.",
+    "source_pages": [
+      14,
+      15
+    ],
+    "importance": 8,
+    "concept": "Impact of cache size on performance",
+    "tags": [
+      "page-14-15",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the methods involved in systems analysis?",
+    "answer": "Methods involved in systems analysis include requirements gathering, modeling, and feasibility analysis.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 7,
+    "concept": "Systems analysis methods",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What are the main programming paradigms?",
+    "answer": "The main programming paradigms include procedural, object-oriented, functional, and logic programming.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 7,
+    "concept": "Programming paradigms",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is pipelining in the context of CPU operation?",
+    "answer": "Pipelining is a technique in CPU design where multiple instruction phases are overlapped to improve instruction throughput and overall efficiency.",
+    "source_pages": [
+      14,
+      15
+    ],
+    "importance": 7,
+    "concept": "Pipelining",
+    "tags": [
+      "page-14-15",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the primary function of transaction processing in databases?",
+    "answer": "The primary function of transaction processing is to ensure that database transactions are completed reliably and adhere to the ACID properties.",
+    "source_pages": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "importance": 6,
+    "concept": "Transaction processing",
+    "tags": [
+      "page-1-2-3-4-5",
+      "cs",
+      "textbook"
+    ]
+  },
+  {
+    "question": "What is the difference between the control bus and data bus?",
+    "answer": "The control bus carries control signals to manage operations, while the data bus carries actual data between components.",
+    "source_pages": [
+      12,
+      13,
+      14
+    ],
+    "importance": 6,
+    "concept": "Bus in Computer Architecture",
+    "tags": [
+      "page-12-13-14",
+      "cs",
+      "textbook"
+    ]
+  }
+]

@@ -1,0 +1,320 @@
+2025-04-10 16:17:18 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:__init__:54 - Initializing PDFExtractor for file: pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf
+2025-04-10 16:17:18 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:__init__:55 - File size: 211.27 MB
+2025-04-10 16:17:18 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:__enter__:60 - PDF opened successfully. Pages: 376
+2025-04-10 16:17:18 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:__enter__:68 - PDF does not have a table of contents
+2025-04-10 16:17:18 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:extract_text_chunks:136 - Extracting text in chunks of 5000 characters with 500 character overlap
+2025-04-10 16:17:21 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:extract_text_chunks:203 - Extracted 187 chunks from PDF
+2025-04-10 16:17:21 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:__exit__:79 - PDF document closed
+2025-04-10 16:17:21 | INFO     | __main__:main:95 - Extracted 187 raw text chunks from PDF
+2025-04-10 16:17:21 | INFO     | __main__:main:99 - Limited to 10 chunks for testing
+2025-04-10 16:17:21 | INFO     | pdf_to_flashcards.utils:__exit__:26 - PDF extraction took 3.33 seconds
+2025-04-10 16:17:21 | INFO     | pdf_to_flashcards.preprocessing.text_processor:process_chunks:148 - Processing 10 chunks...
+2025-04-10 16:17:21 | INFO     | pdf_to_flashcards.utils:__exit__:26 - Text preprocessing took 0.00 seconds
+2025-04-10 16:19:34 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:__init__:54 - Initializing PDFExtractor for file: pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf
+2025-04-10 16:19:34 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:__init__:55 - File size: 211.27 MB
+2025-04-10 16:19:34 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:__enter__:60 - PDF opened successfully. Pages: 376
+2025-04-10 16:19:34 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:__enter__:68 - PDF does not have a table of contents
+2025-04-10 16:19:34 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:extract_text_chunks:136 - Extracting text in chunks of 5000 characters with 500 character overlap
+2025-04-10 16:19:37 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:extract_text_chunks:203 - Extracted 187 chunks from PDF
+2025-04-10 16:19:37 | INFO     | pdf_to_flashcards.extraction.pdf_extractor:__exit__:79 - PDF document closed
+2025-04-10 16:19:37 | INFO     | __main__:main:95 - Extracted 187 raw text chunks from PDF
+2025-04-10 16:19:37 | INFO     | __main__:main:99 - Limited to 10 chunks for testing
+2025-04-10 16:19:37 | INFO     | pdf_to_flashcards.utils:__exit__:26 - PDF extraction took 3.34 seconds
+2025-04-10 16:19:37 | INFO     | pdf_to_flashcards.preprocessing.text_processor:process_chunks:172 - Processing 10 chunks...
+2025-04-10 16:19:37 | WARNING  | pdf_to_flashcards.preprocessing.text_processor:extract_sentences:72 - Error in sentence tokenization: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/codespace/nltk_data'
+    - '/usr/local/python/3.11.9/nltk_data'
+    - '/usr/local/python/3.11.9/share/nltk_data'
+    - '/usr/local/python/3.11.9/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-04-10 16:19:37 | WARNING  | pdf_to_flashcards.preprocessing.text_processor:extract_sentences:72 - Error in sentence tokenization: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/codespace/nltk_data'
+    - '/usr/local/python/3.11.9/nltk_data'
+    - '/usr/local/python/3.11.9/share/nltk_data'
+    - '/usr/local/python/3.11.9/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-04-10 16:19:37 | WARNING  | pdf_to_flashcards.preprocessing.text_processor:extract_sentences:72 - Error in sentence tokenization: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/codespace/nltk_data'
+    - '/usr/local/python/3.11.9/nltk_data'
+    - '/usr/local/python/3.11.9/share/nltk_data'
+    - '/usr/local/python/3.11.9/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-04-10 16:19:37 | WARNING  | pdf_to_flashcards.preprocessing.text_processor:extract_sentences:72 - Error in sentence tokenization: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/codespace/nltk_data'
+    - '/usr/local/python/3.11.9/nltk_data'
+    - '/usr/local/python/3.11.9/share/nltk_data'
+    - '/usr/local/python/3.11.9/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-04-10 16:19:37 | WARNING  | pdf_to_flashcards.preprocessing.text_processor:extract_sentences:72 - Error in sentence tokenization: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/codespace/nltk_data'
+    - '/usr/local/python/3.11.9/nltk_data'
+    - '/usr/local/python/3.11.9/share/nltk_data'
+    - '/usr/local/python/3.11.9/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-04-10 16:19:37 | WARNING  | pdf_to_flashcards.preprocessing.text_processor:extract_sentences:72 - Error in sentence tokenization: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/codespace/nltk_data'
+    - '/usr/local/python/3.11.9/nltk_data'
+    - '/usr/local/python/3.11.9/share/nltk_data'
+    - '/usr/local/python/3.11.9/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-04-10 16:19:37 | WARNING  | pdf_to_flashcards.preprocessing.text_processor:extract_sentences:72 - Error in sentence tokenization: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/codespace/nltk_data'
+    - '/usr/local/python/3.11.9/nltk_data'
+    - '/usr/local/python/3.11.9/share/nltk_data'
+    - '/usr/local/python/3.11.9/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-04-10 16:19:37 | WARNING  | pdf_to_flashcards.preprocessing.text_processor:extract_sentences:72 - Error in sentence tokenization: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/codespace/nltk_data'
+    - '/usr/local/python/3.11.9/nltk_data'
+    - '/usr/local/python/3.11.9/share/nltk_data'
+    - '/usr/local/python/3.11.9/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-04-10 16:19:37 | WARNING  | pdf_to_flashcards.preprocessing.text_processor:extract_sentences:72 - Error in sentence tokenization: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/codespace/nltk_data'
+    - '/usr/local/python/3.11.9/nltk_data'
+    - '/usr/local/python/3.11.9/share/nltk_data'
+    - '/usr/local/python/3.11.9/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-04-10 16:19:37 | WARNING  | pdf_to_flashcards.preprocessing.text_processor:extract_sentences:72 - Error in sentence tokenization: 
+**********************************************************************
+  Resource [93mpunkt_tab[0m not found.
+  Please use the NLTK Downloader to obtain the resource:
+
+  [31m>>> import nltk
+  >>> nltk.download('punkt_tab')
+  [0m
+  For more information see: https://www.nltk.org/data.html
+
+  Attempted to load [93mtokenizers/punkt_tab/english/[0m
+
+  Searched in:
+    - '/home/codespace/nltk_data'
+    - '/usr/local/python/3.11.9/nltk_data'
+    - '/usr/local/python/3.11.9/share/nltk_data'
+    - '/usr/local/python/3.11.9/lib/nltk_data'
+    - '/usr/share/nltk_data'
+    - '/usr/local/share/nltk_data'
+    - '/usr/lib/nltk_data'
+    - '/usr/local/lib/nltk_data'
+**********************************************************************
+
+2025-04-10 16:19:37 | INFO     | pdf_to_flashcards.preprocessing.text_processor:process_chunks:180 - Processed 10 chunks
+2025-04-10 16:19:37 | INFO     | pdf_to_flashcards.preprocessing.text_processor:process_chunks:188 - Average sentences per chunk: 29.1
+2025-04-10 16:19:37 | INFO     | pdf_to_flashcards.preprocessing.text_processor:process_chunks:189 - Total key terms identified: 500
+2025-04-10 16:19:37 | INFO     | __main__:main:104 - Preprocessed 10 text chunks
+2025-04-10 16:19:37 | INFO     | pdf_to_flashcards.utils:__exit__:26 - Text preprocessing took 0.02 seconds
+2025-04-10 16:19:37 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:257 - Generating flashcards using GitHub Models with model: meta/llama-3-8b-instruct
+2025-04-10 16:19:37 | INFO     | pdf_to_flashcards.generation.github_models:__init__:53 - Initialized GitHub Models client with model: meta/llama-3-8b-instruct
+2025-04-10 16:19:37 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:266 - Generating flashcards for chunk 1/10
+2025-04-10 16:19:37 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:85 - GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:37 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:96 - Error generating text with GitHub Models: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:37 | ERROR    | pdf_to_flashcards.generation.github_models:create_flashcards_for_chunk:179 - Error generating flashcards for chunk 0: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:37 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:279 - Generated 0 flashcards for chunk 1
+2025-04-10 16:19:38 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:266 - Generating flashcards for chunk 2/10
+2025-04-10 16:19:38 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:85 - GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:38 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:96 - Error generating text with GitHub Models: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:38 | ERROR    | pdf_to_flashcards.generation.github_models:create_flashcards_for_chunk:179 - Error generating flashcards for chunk 1: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:38 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:279 - Generated 0 flashcards for chunk 2
+2025-04-10 16:19:39 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:266 - Generating flashcards for chunk 3/10
+2025-04-10 16:19:39 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:85 - GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:39 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:96 - Error generating text with GitHub Models: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:39 | ERROR    | pdf_to_flashcards.generation.github_models:create_flashcards_for_chunk:179 - Error generating flashcards for chunk 2: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:39 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:279 - Generated 0 flashcards for chunk 3
+2025-04-10 16:19:39 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:266 - Generating flashcards for chunk 4/10
+2025-04-10 16:19:39 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:85 - GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:39 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:96 - Error generating text with GitHub Models: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:39 | ERROR    | pdf_to_flashcards.generation.github_models:create_flashcards_for_chunk:179 - Error generating flashcards for chunk 3: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:39 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:279 - Generated 0 flashcards for chunk 4
+2025-04-10 16:19:40 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:266 - Generating flashcards for chunk 5/10
+2025-04-10 16:19:40 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:85 - GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:40 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:96 - Error generating text with GitHub Models: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:40 | ERROR    | pdf_to_flashcards.generation.github_models:create_flashcards_for_chunk:179 - Error generating flashcards for chunk 4: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:40 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:279 - Generated 0 flashcards for chunk 5
+2025-04-10 16:19:41 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:266 - Generating flashcards for chunk 6/10
+2025-04-10 16:19:41 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:85 - GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:41 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:96 - Error generating text with GitHub Models: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:41 | ERROR    | pdf_to_flashcards.generation.github_models:create_flashcards_for_chunk:179 - Error generating flashcards for chunk 5: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:41 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:279 - Generated 0 flashcards for chunk 6
+2025-04-10 16:19:41 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:266 - Generating flashcards for chunk 7/10
+2025-04-10 16:19:41 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:85 - GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:41 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:96 - Error generating text with GitHub Models: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:41 | ERROR    | pdf_to_flashcards.generation.github_models:create_flashcards_for_chunk:179 - Error generating flashcards for chunk 6: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:41 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:279 - Generated 0 flashcards for chunk 7
+2025-04-10 16:19:42 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:266 - Generating flashcards for chunk 8/10
+2025-04-10 16:19:42 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:85 - GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:42 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:96 - Error generating text with GitHub Models: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:42 | ERROR    | pdf_to_flashcards.generation.github_models:create_flashcards_for_chunk:179 - Error generating flashcards for chunk 7: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:42 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:279 - Generated 0 flashcards for chunk 8
+2025-04-10 16:19:42 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:266 - Generating flashcards for chunk 9/10
+2025-04-10 16:19:43 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:85 - GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:43 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:96 - Error generating text with GitHub Models: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:43 | ERROR    | pdf_to_flashcards.generation.github_models:create_flashcards_for_chunk:179 - Error generating flashcards for chunk 8: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:43 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:279 - Generated 0 flashcards for chunk 9
+2025-04-10 16:19:43 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:266 - Generating flashcards for chunk 10/10
+2025-04-10 16:19:43 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:85 - GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:43 | ERROR    | pdf_to_flashcards.generation.github_models:generate_completion:96 - Error generating text with GitHub Models: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:43 | ERROR    | pdf_to_flashcards.generation.github_models:create_flashcards_for_chunk:179 - Error generating flashcards for chunk 9: GitHub Models API error: 404 - {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+2025-04-10 16:19:43 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:279 - Generated 0 flashcards for chunk 10
+2025-04-10 16:19:44 | INFO     | pdf_to_flashcards.utils:__exit__:26 - Flashcard generation took 6.36 seconds
+2025-04-10 16:19:44 | INFO     | pdf_to_flashcards.generation.github_models:generate_flashcards:289 - Generated 0 flashcards in total
+2025-04-10 16:19:44 | INFO     | __main__:main:114 - Generated 0 flashcards
+2025-04-10 16:19:44 | INFO     | pdf_to_flashcards.utils:__exit__:26 - Flashcard generation took 6.36 seconds
+2025-04-10 16:19:44 | WARNING  | pdf_to_flashcards.postprocessing.flashcard_processor:process_flashcards:160 - No flashcards to process
+2025-04-10 16:19:44 | INFO     | __main__:main:138 - After post-processing: 0/0 flashcards retained
+2025-04-10 16:19:44 | INFO     | pdf_to_flashcards.utils:__exit__:26 - Post-processing flashcards took 0.00 seconds
+2025-04-10 16:19:44 | WARNING  | pdf_to_flashcards.export.export_flashcards:export_flashcards:132 - No flashcards to export
+2025-04-10 16:19:44 | INFO     | __main__:main:163 - Exported flashcards to 0 formats:
+2025-04-10 16:19:44 | INFO     | pdf_to_flashcards.utils:__exit__:26 - Exporting flashcards took 0.00 seconds

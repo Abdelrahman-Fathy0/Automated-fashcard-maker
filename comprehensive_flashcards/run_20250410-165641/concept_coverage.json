@@ -1,0 +1,11 @@
+{
+  "total_concepts": 41,
+  "covered_concepts": 41,
+  "coverage_percentage": 100.0,
+  "high_importance_total": 41,
+  "high_importance_covered": 41,
+  "high_importance_percentage": 100.0,
+  "core_total": 31,
+  "core_covered": 31,
+  "core_percentage": 100.0
+}

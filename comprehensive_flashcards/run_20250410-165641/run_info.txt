@@ -1,0 +1,14 @@
+PDF File: pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf
+Model: gpt-4o-mini
+Max chunks: 3
+Started at: 20250410-165641
+Completed at: 20250410-165901
+Total chunks processed: 3
+Total concepts identified: 41
+Core concepts: 31
+Core concept coverage: 100.0%
+Total flashcards generated: 76
+Exported to json: flashcards.json
+Exported to csv: flashcards.csv
+Exported to anki: flashcards_anki.txt
+Exported to coverage: concept_coverage.json

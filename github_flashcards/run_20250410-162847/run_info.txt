@@ -1,0 +1,8 @@
+PDF File: pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf
+Model: meta/llama-3-8b-instruct
+Cards per chunk: 5
+Max chunks: 5
+Started at: 20250410-162847
+Completed at: 20250410-162931
+Total chunks processed: 5
+Total flashcards generated: 0

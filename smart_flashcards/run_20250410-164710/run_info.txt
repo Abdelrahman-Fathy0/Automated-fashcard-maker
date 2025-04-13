@@ -1,0 +1,12 @@
+PDF File: pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf
+Model: gpt-4o-mini
+Min Importance: 3
+Max chunks: 5
+Started at: 20250410-164710
+Completed at: 20250410-164837
+Total chunks processed: 5
+Total flashcards generated: 51
+Flashcards after post-processing: 50
+Exported to json: flashcards.json
+Exported to csv: flashcards.csv
+Exported to anki: flashcards_anki.txt

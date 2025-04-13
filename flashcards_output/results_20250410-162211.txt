@@ -1,0 +1,10 @@
+GitHub Models API Testing Results
+================================
+
+Could not access any GitHub Models API endpoints.
+To debug, check the samples directory and follow the examples there.
+
+Next steps:
+1. Check the 'samples' directory for working examples
+2. Use the correct API endpoints and parameters from those samples
+3. Try running the samples directly to verify GitHub Models access

@@ -1,0 +1,131 @@
+Question,Answer,Source Pages,Tags
+"What is the main aim of the book "OCR AS and A Level Computer Science"?","The main aim of the book is to provide detailed coverage of the topics in the new OCR AS and A Level Computer Science specification.
+
+Flashcard 2:","1-2-3-4-5","page-1-2-3-4-5,cs,textbook"
+"How is the content of the book organized for teaching purposes?","The book is divided into twelve sections, with each chapter covering material that can comfortably be taught in one or two lessons.
+
+Flashcard 3:","1-2-3-4-5","page-1-2-3-4-5,cs,textbook"
+"What programming approach does the book utilize in its algorithms?","The book uses pseudocode for the algorithms, rather than any specific programming language.
+
+Flashcard 4:","1-2-3-4-5","page-1-2-3-4-5,cs,textbook"
+"What resource is available to teachers for assessment preparation?","A free Teacher's Pack is available, which includes answers to exercises and questions in the book.
+
+Flashcard 5:","1-2-3-4-5","page-1-2-3-4-5,cs,textbook"
+"What are Sections 10, 11, and 12 of the book primarily focused on?","Sections 10, 11, and 12 principally relate to problem-solving skills and cover programming techniques in sufficient depth for Component 02.","1-2-3-4-5","page-1-2-3-4-5,cs,textbook"
+"What are the main components of the Central Processing Unit (CPU)?","The main components of the CPU include the control unit, arithmetic/logic unit (ALU), buses, and dedicated registers.
+
+Flashcard 2:","5-6-7-8-9-10","page-5-6-7-8-9-10,cs,textbook"
+"What is the role of the Control Unit in the CPU?","The Control Unit controls and coordinates the activities of the CPU, directing the flow of data between the CPU and other devices, managing instruction execution, and storing resulting data.
+
+Flashcard 3:","5-6-7-8-9-10","page-5-6-7-8-9-10,cs,textbook"
+"What is the function of the Fetch-Execute cycle in a CPU?","The Fetch-Execute cycle involves the CPU fetching an instruction from memory, decoding it, executing the instruction, and then storing the resulting data back in memory or registers.
+
+Flashcard 4:","5-6-7-8-9-10","page-5-6-7-8-9-10,cs,textbook"
+"Describe the purpose of the system bus in a computer.","The system bus connects the processor, memory, and I/O controllers, consisting of data, address, and control buses, allowing for the transmission of data and control signals.
+
+Flashcard 5:","5-6-7-8-9-10","page-5-6-7-8-9-10,cs,textbook"
+"How do the data, address, and control buses differ in their function?","The data bus carries data in both directions, the address bus sends addresses from the CPU to memory or I/O controllers (one way), and the control bus transmits control signals in both directions.","5-6-7-8-9-10","page-5-6-7-8-9-10,cs,textbook"
+"What are the three main buses in a computer system and what is their collective name?","The three main buses are the control bus, data bus, and address bus, collectively known as the system bus.
+
+Flashcard 2:","10-11-12","page-10-11-12,cs,textbook"
+"What is the purpose of the control bus in a computer system?","The control bus transmits command, timing, and specific status information between system components, ensuring proper access and use of the data and address buses.
+
+Flashcard 3:","10-11-12","page-10-11-12,cs,textbook"
+"Describe the function of the Arithmetic-Logic Unit (ALU).","The ALU performs arithmetic and logical operations on data, including addition, subtraction, multiplication, division, shift operations, and Boolean logic operations.
+
+Flashcard 4:","10-11-12","page-10-11-12,cs,textbook"
+"What role does the program counter (PC) play in a CPU?","The program counter (PC) holds the address of the next instruction to be executed, which may be sequential or from a branch/jump instruction.
+
+Flashcard 5:","10-11-12","page-10-11-12,cs,textbook"
+"What are the memory address register (MAR) and memory data register (MDR) used for?","The MAR holds the address of the memory location for fetching or writing data, while the MDR temporarily stores the data read from or written to memory.","10-11-12","page-10-11-12,cs,textbook"
+"What is the function of the Memory Address Register (MAR) in the Fetch-Execute cycle?","The MAR holds the address of the next instruction to be fetched from memory.
+
+Flashcard 2","12-13-14","page-12-13-14,cs,textbook"
+"What is the role of the Memory Data Register (MDR) during the Fetch phase?","The MDR temporarily stores the data read from or written to memory.
+
+Flashcard 3","12-13-14","page-12-13-14,cs,textbook"
+"During which phase of the Fetch-Decode-Execute cycle is the instruction split into opcode and operand?","This occurs during the Decode phase.
+
+Flashcard 4","12-13-14","page-12-13-14,cs,textbook"
+"What happens to the Program Counter (PC) during the Fetch phase of the cycle?","The content of the PC is incremented to hold the address of the next instruction after the current instruction is fetched.
+
+Flashcard 5","12-13-14","page-12-13-14,cs,textbook"
+"At which stages of the Fetch-Execute cycle are the ALU and accumulator involved?","The ALU is involved during the Execute phase, while the accumulator may be involved in carrying out operations with the operand.","12-13-14","page-12-13-14,cs,textbook"
+"What are the main factors affecting processor performance?","The main factors are clock speed, the number of cores, and the amount and type of cache memory.
+
+Flashcard 2:","14-15","page-14-15,cs,textbook"
+"How is clock speed measured and what is its significance in CPU operations?","Clock speed is measured in Hertz (Hz) and Gigahertz (GHz), representing the number of cycles per second. It determines how fast instructions can be executed by the CPU.
+
+Flashcard 3:","14-15","page-14-15,cs,textbook"
+"What is the difference between a dual-core and a quad-core processor?","A dual-core processor has two processors linked together, while a quad-core processor has four linked processors. Each core can process different instructions simultaneously.
+
+Flashcard 4:","14-15","page-14-15,cs,textbook"
+"Why might a dual-core processor not always perform twice as fast as a single-core processor?","A dual-core processor may not perform twice as fast due to software limitations that prevent it from fully utilizing both processors.
+
+Flashcard 5:","14-15","page-14-15,cs,textbook"
+"What role does cache memory play in CPU performance?","Cache memory is a small, fast memory inside the CPU that stores recently fetched instructions. It allows quicker access compared to main memory, improving overall system performance.","14-15","page-14-15,cs,textbook"
+"What is the purpose of cache memory in a computer system?","Cache memory stores instructions and data fetched from main memory so they can be retrieved quickly if needed again soon, improving overall system performance.
+
+Flashcard 2","15-16-17","page-15-16-17,cs,textbook"
+"What are the different levels of cache, and how do they vary in size and speed?","Level 1 cache is very fast but small (2-64KB), Level 2 cache is fairly fast and medium-sized (256KB-2MB), and some CPUs also have Level 3 cache, which is typically larger but slower than Level 2.
+
+Flashcard 3","15-16-17","page-15-16-17,cs,textbook"
+"How does pipelining improve processor performance?","Pipelining allows multiple instructions to be processed simultaneously by overlapping the Fetch-Execute cycle stages, which keeps the ALU busy and reduces idle time.
+
+Flashcard 4","15-16-17","page-15-16-17,cs,textbook"
+"What is the significance of the width of the address bus in a computer system?","The width of the address bus determines the maximum memory capacity that can be addressed; for example, a 32-bit address bus can address 4 GiB of memory locations.
+
+Flashcard 5","15-16-17","page-15-16-17,cs,textbook"
+"In a machine code instruction format, what two main components are typically included?","The two main components are the operation code (opcode) that specifies the basic machine operation, and the operand(s) that provide the necessary data or address for the operation.","15-16-17","page-15-16-17,cs,textbook"
+"What is the name of the language in which the provided machine code program is written?","The language is referred to as machine code or assembly language.
+
+Flashcard 2","17-18-19","page-17-18-19,cs,textbook"
+"In a von Neumann machine, what is shared between data and instructions?","A shared memory and bus are used for both data and instructions.
+
+Flashcard 3","17-18-19","page-17-18-19,cs,textbook"
+"What is the primary architectural difference between von Neumann and Harvard architectures?","The von Neumann architecture uses a single memory for both instructions and data, whereas the Harvard architecture has physically separate memories for instructions and data.
+
+Flashcard 4","17-18-19","page-17-18-19,cs,textbook"
+"Why can Harvard architecture be faster than von Neumann architecture?","Harvard architecture can fetch data and instructions in parallel, while von Neumann architecture requires them to compete for the same bus.
+
+Flashcard 5","17-18-19","page-17-18-19,cs,textbook"
+"What type of systems predominantly uses Harvard architecture?","Harvard architecture is extensively used in embedded Digital Signal Processing (DSP) systems.","17-18-19","page-17-18-19,cs,textbook"
+"What are the main characteristics of von Neumann architecture?","In von Neumann architecture, data and programs share the same memory, and one bus is used to transfer both data and instructions.
+
+Flashcard 2:","19-20","page-19-20,cs,textbook"
+"What distinguishes Harvard architecture from von Neumann architecture?","Harvard architecture has separate memories for instructions and data, allowing for parallel data and instruction buses, while von Neumann architecture uses a single memory for both.
+
+Flashcard 3:","19-20","page-19-20,cs,textbook"
+"What is a key feature of Complex Instruction Set Computers (CISC)?","CISC uses a large instruction set to perform tasks in fewer lines of assembly language, with complex instructions built into the hardware.
+
+Flashcard 4:","19-20","page-19-20,cs,textbook"
+"What are the advantages and disadvantages of CISC architecture?","An advantage of CISC is less work for the compiler to translate high-level language into machine code due to shorter code. A disadvantage is that many specialized instructions are built into the hardware, often leading to underutilization.
+
+Flashcard 5:","19-20","page-19-20,cs,textbook"
+"How does Reduced Instruction Set Computer (RISC) architecture differ from CISC?","RISC architecture executes only simple instructions, each taking one clock cycle, which allows for pipelining, while CISC can execute complex instructions but may require more RAM and compiler work for translation.","19-20","page-19-20,cs,textbook"
+"What is the primary advantage of RISC over CISC architecture in terms of instruction execution?","RISC allows pipelining, enabling multiple instructions to be executed simultaneously, which can execute at least as fast as a single CISC instruction.
+
+Flashcard 2:","20-21-22","page-20-21-22,cs,textbook"
+"What is the role of a co-processor in a computer system?","A co-processor supplements the primary CPU by performing specialized functions like floating-point arithmetic, graphics processing, or digital signal processing.
+
+Flashcard 3:","20-21-22","page-20-21-22,cs,textbook"
+"How do multi-core CPUs enhance computational performance?","Multi-core CPUs distribute workload across multiple cores, improving performance significantly, especially when applications are designed to take advantage of parallel processing.
+
+Flashcard 4:","20-21-22","page-20-21-22,cs,textbook"
+"What distinguishes a GPU from a CPU in terms of architecture and functionality?","A GPU has a massively parallel architecture with thousands of smaller cores designed for handling multiple tasks simultaneously, making it highly efficient for processing large blocks of visual data.
+
+Flashcard 5:","20-21-22","page-20-21-22,cs,textbook"
+"Why did Google's DeepMind AlphaGo program require a significant number of processors and GPUs?","AlphaGo utilized 1,920 processors and 280 GPUs to process complex calculations and analyze vast amounts of data for predicting moves in the game of Go, which is far more complex than chess.","20-21-22","page-20-21-22,cs,textbook"
+"What was the significance of Google's DeepMind AlphaGo program?","It was the first computer program to defeat a human player at the game of Go.
+
+Flashcard 2","22-23-24-25","page-22-23-24-25,cs,textbook"
+"How does AlphaGo utilize computing power?","AlphaGo runs on Google’s cloud computer network, using 1,920 processors and 280 GPUs.
+
+Flashcard 3","22-23-24-25","page-22-23-24-25,cs,textbook"
+"What are the two types of barcodes mentioned in the text, and how do they differ?","Linear barcodes (1D) and 2D barcodes (like QR codes); 2D barcodes can hold more information than 1D barcodes.
+
+Flashcard 4","22-23-24-25","page-22-23-24-25,cs,textbook"
+"Name the four types of barcode readers and their basic technology.","The four types are pen-type readers, laser scanners, CCD readers, and camera-based readers, each using different technologies for reading and decoding barcodes.
+
+Flashcard 5","22-23-24-25","page-22-23-24-25,cs,textbook"
+"What is one advantage of pen-type barcode scanners?","They are durable and can be tightly sealed against dust and dirt due to their simple design, making them suitable for low-volume scanning applications.","22-23-24-25","page-22-23-24-25,cs,textbook"
