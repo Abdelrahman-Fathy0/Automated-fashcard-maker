@@ -24,7 +24,7 @@ jobs:
           pip install pymupdf tqdm azure-ai-inference azure-core
       
       - name: Download previous progress
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: flashcard-progress
           path: progress/
