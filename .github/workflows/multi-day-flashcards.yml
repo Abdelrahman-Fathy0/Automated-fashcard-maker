@@ -3,10 +3,6 @@ name: Generate Comprehensive Flashcards
 on:
   workflow_dispatch:
     inputs:
-      pdf_path:
-        description: 'Path to PDF file'
-        required: true
-        default: 'test_pdfs/CS-TEXTBOOK.pdf'
       model:
         description: 'AI model to use'
         required: true
@@ -15,9 +11,11 @@ on:
         description: 'Maximum API requests per run'
         required: true
         default: '140'
-  schedule:
-    # Run daily at 1 AM UTC
-    - cron: '0 1 * * *'
+    # Add file input for the PDF
+    files:
+      pdf:
+        description: 'PDF file to process'
+        required: true
 
 jobs:
   generate-flashcards:
@@ -36,11 +34,20 @@ jobs:
           python -m pip install --upgrade pip
           pip install azure-ai-inference PyMuPDF tqdm
 
-      # Create progress directory first so we have somewhere to work
-      - name: Create progress directory
-        run: mkdir -p progress
+      # Create directories
+      - name: Create directories
+        run: |
+          mkdir -p progress
+          mkdir -p pdfs
 
-      # Try to download previous progress - this will be skipped on first run
+      # Move uploaded PDF to a known location
+      - name: Set up PDF file
+        run: |
+          # The PDF is available at ${{ github.event.inputs.pdf }}
+          cp ${{ github.event.inputs.pdf }} pdfs/input.pdf
+          echo "PDF_PATH=pdfs/input.pdf" >> $GITHUB_ENV
+
+      # Check for previous progress
       - name: Check if previous progress exists
         id: check-progress
         uses: actions/github-script@v7
@@ -69,24 +76,10 @@ jobs:
           name: flashcard-progress
           path: progress
 
-      - name: Set default environment variables
+      - name: Set environment variables
         run: |
-          echo "PDF_PATH=${{ github.event.inputs.pdf_path || 'test_pdfs/CS-TEXTBOOK.pdf' }}" >> $GITHUB_ENV
           echo "MODEL=${{ github.event.inputs.model || 'gpt4o-mini' }}" >> $GITHUB_ENV
           echo "MAX_REQUESTS=${{ github.event.inputs.max_requests_per_run || '140' }}" >> $GITHUB_ENV
-
-      # Copy the script from its location to the repository
-      - name: Copy script file
-        run: |
-          if [ -f "/workspaces/codespaces-models/incremental_comprehensive_flashcard_generator.py" ]; then
-            cp /workspaces/codespaces-models/incremental_comprehensive_flashcard_generator.py .
-            echo "Using script from codespaces path"
-          elif [ -f "incremental_comprehensive_flashcard_generator.py" ]; then
-            echo "Script already exists in repository root"
-          else
-            echo "ERROR: Script not found. Please commit the script to your repository."
-            exit 1
-          fi
 
       - name: Run incremental flashcard generator
         env:
@@ -110,7 +103,7 @@ jobs:
           path: comprehensive_flashcards/
           retention-days: 30
 
-      # Use a simpler approach for notification
+      # Notification steps remain the same
       - name: Create completion summary
         if: env.FLASHCARDS_COMPLETED == 'true'
         run: |
@@ -120,10 +113,8 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "**Details:**" >> $GITHUB_STEP_SUMMARY
           echo "- Model used: $MODEL" >> $GITHUB_STEP_SUMMARY
-          echo "- PDF processed: $PDF_PATH" >> $GITHUB_STEP_SUMMARY
           echo "- Download the 'completed-flashcards' artifact to access your files" >> $GITHUB_STEP_SUMMARY
 
-      # Use a simpler GitHub issue creation approach
       - name: Create notification issue
         if: env.FLASHCARDS_COMPLETED == 'true'
         uses: peter-evans/create-issue-from-file@v4
@@ -132,7 +123,6 @@ jobs:
           content-filepath: ./issue-body.md
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      # Create the issue content file
       - name: Prepare issue content
         if: env.FLASHCARDS_COMPLETED == 'true'
         run: |
@@ -140,7 +130,6 @@ jobs:
           Your comprehensive flashcards are ready!
 
           ### Details
-          - **PDF processed**: \`${PDF_PATH}\`
           - **Model used**: \`${MODEL}\`
           - **Date completed**: $(date -u +"%Y-%m-%d %H:%M:%S UTC")
 
