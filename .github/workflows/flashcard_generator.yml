@@ -30,6 +30,12 @@ jobs:
           path: progress/
         continue-on-error: true
       
+      - name: Debug repository structure
+        run: |
+          echo "Current directory: $(pwd)"
+          echo "Listing all files:"
+          find . -type f | grep -v ".git" | sort
+      
       - name: Run incremental flashcard generation
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
