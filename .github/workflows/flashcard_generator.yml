@@ -21,20 +21,28 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pymupdf tqdm azure-ai-inference azure-core
+          pip install pymupdf tqdm azure-ai-inference azure-core gdown
       
       - name: Download previous progress
-        uses: actions/download-artifact@v4  # Updated from v3
+        uses: actions/download-artifact@v4
         with:
           name: flashcard-progress
           path: progress/
         continue-on-error: true
+      
+      - name: Download PDF from Google Drive
+        run: |
+          mkdir -p pdf_to_flashcards/test_pdfs
+          # Using gdown for reliable Google Drive downloads
+          gdown --id 1KSe2zJGJL69gWQ1nsm0sWxvnEIy2wY4F -O pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf
       
       - name: Debug repository structure
         run: |
           echo "Current directory: $(pwd)"
           echo "Listing all files:"
           find . -type f | grep -v ".git" | sort
+          # Verify PDF file was downloaded correctly
+          ls -la pdf_to_flashcards/test_pdfs/CS-TEXTBOOK.pdf
       
       - name: Run incremental flashcard generation
         env:
@@ -44,14 +52,14 @@ jobs:
           mkdir -p progress
       
       - name: Save progress
-        uses: actions/upload-artifact@v4  # Updated from v3
+        uses: actions/upload-artifact@v4
         with:
           name: flashcard-progress
           path: progress/
           retention-days: 90
       
       - name: Save generated flashcards
-        uses: actions/upload-artifact@v4  # Updated from v3
+        uses: actions/upload-artifact@v4
         with:
           name: flashcards
           path: comprehensive_flashcards/
