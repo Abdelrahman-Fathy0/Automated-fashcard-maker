@@ -24,7 +24,7 @@ jobs:
           pip install pymupdf tqdm azure-ai-inference azure-core
       
       - name: Download previous progress
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v4  # Updated from v3
         with:
           name: flashcard-progress
           path: progress/
@@ -38,14 +38,14 @@ jobs:
           mkdir -p progress
       
       - name: Save progress
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4  # Updated from v3
         with:
           name: flashcard-progress
           path: progress/
           retention-days: 90
       
       - name: Save generated flashcards
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4  # Updated from v3
         with:
           name: flashcards
           path: comprehensive_flashcards/
