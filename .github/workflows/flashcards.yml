@@ -52,10 +52,7 @@ jobs:
           fi
           
       - name: Generate flashcards
-        run: |
-          python scripts/flashcard_generator.py "${{ inputs.pdf_path }}" \
-            --model "${{ inputs.model }}" \
-            --max-requests "${{ inputs.max_requests }}" \
+        run: python scripts/flashcard_generator.py "${{ inputs.pdf_path }}" --model "${{ inputs.model }}" --max-requests "${{ inputs.max_requests }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       
