@@ -15,6 +15,7 @@ import re
 from datetime import datetime
 from tqdm import tqdm
 from collections import defaultdict
+import threading
 
 # Azure AI Inference SDK imports
 from azure.ai.inference import ChatCompletionsClient
@@ -103,6 +104,9 @@ def extract_text_from_pdf(pdf_path, chunk_size=5000, chunk_overlap=500):
     """Extract text from PDF in chunks."""
     print(f"Extracting text from PDF: {pdf_path}")
     
+    print(f"DEBUG: Starting PDF extraction: {pdf_path}")
+    sys.stdout.flush()
+    
     if not os.path.exists(pdf_path):
         raise FileNotFoundError(f"PDF file not found: {pdf_path}")
     
@@ -182,6 +186,9 @@ def extract_text_from_pdf(pdf_path, chunk_size=5000, chunk_overlap=500):
     doc.close()
     print(f"Extracted {len(chunks)} chunks from PDF")
     
+    print(f"DEBUG: Completed PDF extraction: {len(chunks)} chunks")
+    sys.stdout.flush()
+    
     return chunks
 
 def analyze_chunk_with_concept_hierarchy(chunk, client, model_name):
@@ -245,8 +252,9 @@ Only output valid JSON that can be parsed with json.loads().
         response = client.complete(
             messages=[system_message, user_message],
             model=model_name,
-            temperature=0.2,  # Lower temperature for more consistent analysis
-            max_tokens=2500
+            temperature=0.2,
+            max_tokens=2500,
+            timeout=60  # Add 60 second timeout
         )
         
         # Extract the generated text
@@ -328,8 +336,7 @@ def build_concept_forest(analyzed_chunks):
                     concept_data.get("importance", 5)
                 )
                 all_concepts[concept_name]["components"].extend(
-                    [c for c in concept_data.get("components", []) 
-                     if c not in all_concepts[concept_name]["components"]]
+                    [c for c in concept_data.get("components", []) if c not in all_concepts[concept_name]["components"]]
                 )
                 all_concepts[concept_name]["source_pages"].extend(
                     [p for p in chunk.source_pages if p not in all_concepts[concept_name]["source_pages"]]
@@ -426,7 +433,6 @@ Focus on creating flashcards that test understanding of core concepts and ensure
     # Create user message
     user_message = UserMessage(
         content=f"""Text from CS textbook (from page {page_sources}):
-
 {chunk.text}
 
 {concept_report}
@@ -480,7 +486,6 @@ Only output valid JSON that can be parsed with json.loads().
                 # Determine the concept path (hierarchy)
                 concept_name = card_data.get("concept", "").strip()
                 concept_path = []
-                
                 if concept_name in concept_nodes:
                     # Build path from this concept up to the root
                     current = concept_nodes[concept_name]
@@ -529,7 +534,6 @@ def create_missing_component_flashcards(concept_nodes, client, model_name):
     """
     # Identify uncovered but important concepts
     missing_concepts = []
-    
     for name, node in concept_nodes.items():
         # If this is an important concept that isn't covered
         if not node.covered and node.importance >= 6 and node.type == "CORE":
@@ -543,11 +547,10 @@ def create_missing_component_flashcards(concept_nodes, client, model_name):
             if uncovered_children:
                 missing_concepts.extend(uncovered_children)
     
+    print(f"Creating flashcards for {len(missing_concepts)} uncovered important concepts")
     if not missing_concepts:
         print("No missing concept flashcards needed - comprehensive coverage achieved!")
         return []
-    
-    print(f"Creating flashcards for {len(missing_concepts)} uncovered important concepts")
     
     supplementary_flashcards = []
     
@@ -576,7 +579,6 @@ def create_missing_component_flashcards(concept_nodes, client, model_name):
         # Create user message
         user_message = UserMessage(
             content=f"""Create flashcards for these important computer science concepts that need coverage:
-
 {concept_descriptions}
 
 For each concept, create a high-quality flashcard that:
@@ -591,6 +593,7 @@ Format each flashcard as JSON objects in an array:
     "question": "Clear, specific question about the concept",
     "answer": "Concise, accurate answer",
     "concept": "Exact concept name from the list",
+    "related_concepts": ["List", "of", "related", "concepts"],
     "importance": <1-10 rating of importance>
   }}
 ]
@@ -664,16 +667,17 @@ Only output valid JSON that can be parsed with json.loads().
                             flashcard.tags.append(page_tag)
                         
                         supplementary_flashcards.append(flashcard)
-                        
                         # Mark the concept as covered
                         concept_node.covered = True
                 
             except json.JSONDecodeError as e:
                 print(f"Error parsing supplementary flashcards JSON: {e}")
                 print(f"Response content: {content}")
-                
+                return []
+        
         except Exception as e:
             print(f"Error generating supplementary flashcards: {e}")
+            return []
     
     print(f"Generated {len(supplementary_flashcards)} supplementary flashcards for missing concepts")
     return supplementary_flashcards
@@ -800,52 +804,48 @@ def save_progress(progress_data):
     """Save progress data for future runs."""
     # Update the last_updated timestamp
     progress_data["last_updated"] = datetime.now().isoformat()
-    
-    # Save to file
     progress_file = os.path.join(PROGRESS_DIR, "progress.json")
+    serializable_progress = progress_data.copy()
+    
+    # Convert objects to serializable format
+    if "analyzed_chunks" in serializable_progress:
+        serializable_chunks = []
+        for chunk in serializable_progress["analyzed_chunks"]:
+            if isinstance(chunk, TextChunk):
+                serializable_chunks.append({
+                    "id": chunk.id,
+                    "text": chunk.text,
+                    "source_pages": chunk.source_pages,
+                    "content_density": chunk.content_density,
+                    "key_concepts": chunk.key_concepts,
+                    "is_analyzed": chunk.is_analyzed,
+                    "concept_hierarchy": chunk.concept_hierarchy,
+                    "recommended_flashcard_count": getattr(chunk, "recommended_flashcard_count", 5)
+                })
+            else:
+                # It's already in dictionary form
+                serializable_chunks.append(chunk)
+        serializable_progress["analyzed_chunks"] = serializable_chunks
+    
+    if "flashcards" in serializable_progress:
+        serializable_flashcards = []
+        for card in serializable_progress["flashcards"]:
+            if isinstance(card, Flashcard):
+                serializable_flashcards.append({
+                    "question": card.question,
+                    "answer": card.answer,
+                    "source_pages": card.source_pages,
+                    "importance": card.importance,
+                    "concept": card.concept,
+                    "concept_path": card.concept_path,
+                    "tags": card.tags
+                })
+            else:
+                # It's already in dictionary form
+                serializable_flashcards.append(card)
+        serializable_progress["flashcards"] = serializable_flashcards
+    
     with open(progress_file, "w", encoding="utf-8") as f:
-        # Convert objects to serializable format
-        serializable_progress = progress_data.copy()
-        
-        # Convert analyzed_chunks to serializable format
-        if "analyzed_chunks" in serializable_progress:
-            serializable_chunks = []
-            for chunk in serializable_progress["analyzed_chunks"]:
-                if isinstance(chunk, TextChunk):
-                    serializable_chunks.append({
-                        "id": chunk.id,
-                        "text": chunk.text,
-                        "source_pages": chunk.source_pages,
-                        "content_density": chunk.content_density,
-                        "key_concepts": chunk.key_concepts,
-                        "is_analyzed": chunk.is_analyzed,
-                        "concept_hierarchy": chunk.concept_hierarchy,
-                        "recommended_flashcard_count": getattr(chunk, "recommended_flashcard_count", 5)
-                    })
-                else:
-                    # It's already in dictionary form
-                    serializable_chunks.append(chunk)
-            serializable_progress["analyzed_chunks"] = serializable_chunks
-        
-        # Convert flashcards to serializable format
-        if "flashcards" in serializable_progress:
-            serializable_flashcards = []
-            for card in serializable_progress["flashcards"]:
-                if isinstance(card, Flashcard):
-                    serializable_flashcards.append({
-                        "question": card.question,
-                        "answer": card.answer,
-                        "source_pages": card.source_pages,
-                        "importance": card.importance,
-                        "concept": card.concept,
-                        "concept_path": card.concept_path,
-                        "tags": card.tags
-                    })
-                else:
-                    # It's already in dictionary form
-                    serializable_flashcards.append(card)
-            serializable_progress["flashcards"] = serializable_flashcards
-        
         json.dump(serializable_progress, f, cls=CustomJSONEncoder, indent=2)
 
 def reconstruct_objects(progress_data):
@@ -882,9 +882,9 @@ def reconstruct_objects(progress_data):
                     answer=card_data["answer"],
                     source_pages=card_data.get("source_pages", []),
                     importance=card_data.get("importance", 5),
-                    tags=card_data.get("tags", []),
                     concept=card_data.get("concept", ""),
-                    concept_path=card_data.get("concept_path", [])
+                    concept_path=card_data.get("concept_path", []),
+                    tags=card_data.get("tags", [])
                 )
                 reconstructed_cards.append(card)
             else:
@@ -910,7 +910,6 @@ def reconstruct_objects(progress_data):
         for name, node_data in progress_data["concept_nodes_dict"].items():
             if node_data.get("parent") and node_data["parent"] in concept_nodes:
                 concept_nodes[name].parent = concept_nodes[node_data["parent"]]
-            
             for child_name in node_data.get("children", []):
                 if child_name in concept_nodes and child_name != name:
                     concept_nodes[name].add_child(concept_nodes[child_name])
@@ -967,7 +966,6 @@ def main():
             coverage_report = analyze_coverage(progress["concept_nodes"])
         else:
             coverage_report = {"completed": True}
-        
         if progress["output_dir"]:
             export_flashcards(progress["flashcards"], coverage_report, progress["output_dir"])
             print("Regenerated output files.")
@@ -1001,7 +999,6 @@ def main():
     
     # Track API requests for this run
     api_requests_made = 0
-    
     print(f"\n===== INCREMENTAL COMPREHENSIVE CS FLASHCARD GENERATION =====")
     print(f"PDF File: {pdf_file}")
     print(f"Model: {model_name}")
@@ -1024,7 +1021,6 @@ def main():
     )
     
     # Extract text from PDF if we're just starting
-    chunks = []
     if progress["chunks_processed"] == 0 and progress["total_chunks"] == 0:
         print("Starting new flashcard generation process")
         chunks = extract_text_from_pdf(pdf_file)
@@ -1040,18 +1036,16 @@ def main():
             chunks = chunks[:max_chunks]
         print(f"Continuing from previous run: Processed {progress['chunks_processed']} of {progress['total_chunks']} chunks")
     
+    print(f"Analyzing content with hierarchical concept mapping using model: {model_name}")
     # STEP 1: Process chunks that haven't been analyzed yet
     analyze_start_idx = len(progress["analyzed_chunks"])
     
     if analyze_start_idx < len(chunks):
-        print(f"Analyzing content with hierarchical concept mapping using model: {model_name}")
-        
         for i in range(analyze_start_idx, len(chunks)):
             if api_requests_made >= max_requests:
                 print(f"Reached maximum API requests limit ({max_requests}) for analysis.")
                 break
             
-            print(f"DEBUG: Starting processing of chunk {i}")
             print(f"Analyzing chunk {i+1}/{len(chunks)} (pages {', '.join(str(p) for p in chunks[i].source_pages)})")
             analyzed_chunk = analyze_chunk_with_concept_hierarchy(chunks[i], client, model_name)
             progress["analyzed_chunks"].append(analyzed_chunk)
@@ -1062,7 +1056,6 @@ def main():
             
             # Add a small delay to avoid rate limiting
             time.sleep(1)
-            print(f"DEBUG: Completed processing of chunk {i}")
     
     # STEP 2: Build the concept forest if we have analyzed chunks
     if progress["analyzed_chunks"]:
@@ -1087,10 +1080,9 @@ def main():
     else:
         concept_nodes = {}
     
+    print(f"Generating comprehensive flashcards using model: {model_name}")
     # STEP 3: Generate flashcards for analyzed chunks
     if progress["analyzed_chunks"]:
-        print(f"Generating comprehensive flashcards using model: {model_name}")
-        
         for i in range(progress["chunks_processed"], len(progress["analyzed_chunks"])):
             if api_requests_made >= max_requests:
                 print(f"Reached maximum API requests limit ({max_requests}) for flashcard generation.")
@@ -1098,7 +1090,6 @@ def main():
             
             chunk = progress["analyzed_chunks"][i]
             print(f"Generating flashcards for chunk {chunk.id + 1}/{len(chunks)} (pages {', '.join(str(p) for p in chunk.source_pages)})")
-            
             flashcards = generate_comprehensive_flashcards(
                 chunk=chunk,
                 concept_nodes=concept_nodes,
@@ -1126,7 +1117,6 @@ def main():
     # STEP 4: Generate supplementary flashcards for missing concepts if we've processed all chunks
     if all_chunks_processed and api_requests_made < max_requests and concept_nodes:
         print("All chunks processed. Creating supplementary flashcards for missing concepts...")
-        
         supplementary_flashcards = create_missing_component_flashcards(
             concept_nodes=concept_nodes,
             client=client,
@@ -1194,8 +1184,17 @@ def main():
     print(f"- Used model: {model_name}")
     print("- Progress saved and can be resumed in next run")
     print("=" * 45)
-    print("Status update message")
     sys.stdout.flush()  # Force output to be displayed immediately
 
 if __name__ == "__main__":
     main()
+
+def exit_after(seconds):
+    print(f"ERROR: Script timed out after {seconds} seconds")
+    sys.stdout.flush()
+    os._exit(1)
+
+# Force exit after 10 minutes
+timer = threading.Timer(600, exit_after, [600])
+timer.daemon = True
+timer.start()
