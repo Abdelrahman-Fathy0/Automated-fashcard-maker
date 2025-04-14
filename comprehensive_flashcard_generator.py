@@ -192,32 +192,6 @@ def extract_text_from_pdf(pdf_path, chunk_size=5000, chunk_overlap=500):
     return chunks
 
 def analyze_chunk_with_concept_hierarchy(chunk, client, model_name):
-    """Process chunk with explicit error handling and timeouts"""
-    
-    print(f"DEBUG: Starting API call for chunk {chunk.id}")
-    sys.stdout.flush()
-    
-    try:
-        # Call with shorter timeout
-        response = client.complete(
-            messages=[system_message, user_message],
-            model=model_name,
-            temperature=0.2,
-            max_tokens=2500,
-            timeout=30  # Shorter timeout to fail faster
-        )
-        print(f"DEBUG: API call for chunk {chunk.id} completed successfully")
-        sys.stdout.flush()
-        
-    except Exception as e:
-        print(f"DEBUG: API call for chunk {chunk.id} failed with error: {str(e)}")
-        print(f"Error type: {type(e).__name__}")
-        sys.stdout.flush()
-        # Return a minimal analyzed chunk to continue
-        chunk.is_analyzed = True
-        chunk.concept_hierarchy = []
-        return chunk
-
     """
     Analyze chunk to determine content density and extract hierarchical concept organization.
     Identifies parent-child relationships between concepts.
@@ -273,15 +247,20 @@ Only output valid JSON that can be parsed with json.loads().
 """
     )
     
+    print(f"DEBUG: Starting API call for chunk {chunk.id}")
+    sys.stdout.flush()
+    
     try:
-        # Call the client to analyze the content
+        # Call with shorter timeout
         response = client.complete(
             messages=[system_message, user_message],
             model=model_name,
             temperature=0.2,
             max_tokens=2500,
-            timeout=60  # Add 60 second timeout
+            timeout=30  # Shorter timeout to fail faster
         )
+        print(f"DEBUG: API call for chunk {chunk.id} completed successfully")
+        sys.stdout.flush()
         
         # Extract the generated text
         content = response.choices[0].message.content
