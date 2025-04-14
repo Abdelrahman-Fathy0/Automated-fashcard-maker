@@ -192,6 +192,32 @@ def extract_text_from_pdf(pdf_path, chunk_size=5000, chunk_overlap=500):
     return chunks
 
 def analyze_chunk_with_concept_hierarchy(chunk, client, model_name):
+    """Process chunk with explicit error handling and timeouts"""
+    
+    print(f"DEBUG: Starting API call for chunk {chunk.id}")
+    sys.stdout.flush()
+    
+    try:
+        # Call with shorter timeout
+        response = client.complete(
+            messages=[system_message, user_message],
+            model=model_name,
+            temperature=0.2,
+            max_tokens=2500,
+            timeout=30  # Shorter timeout to fail faster
+        )
+        print(f"DEBUG: API call for chunk {chunk.id} completed successfully")
+        sys.stdout.flush()
+        
+    except Exception as e:
+        print(f"DEBUG: API call for chunk {chunk.id} failed with error: {str(e)}")
+        print(f"Error type: {type(e).__name__}")
+        sys.stdout.flush()
+        # Return a minimal analyzed chunk to continue
+        chunk.is_analyzed = True
+        chunk.concept_hierarchy = []
+        return chunk
+
     """
     Analyze chunk to determine content density and extract hierarchical concept organization.
     Identifies parent-child relationships between concepts.
@@ -1037,6 +1063,12 @@ def main():
         print(f"Continuing from previous run: Processed {progress['chunks_processed']} of {progress['total_chunks']} chunks")
     
     print(f"Analyzing content with hierarchical concept mapping using model: {model_name}")
+    
+    # In the main function, right before starting chunk analysis:
+    print(f"DEBUG: About to start analyzing chunks with model {model_name}")
+    print(f"DEBUG: Using token from environment: {token[:5]}...{token[-5:] if token else 'None'}")
+    sys.stdout.flush()
+    
     # STEP 1: Process chunks that haven't been analyzed yet
     analyze_start_idx = len(progress["analyzed_chunks"])
     
