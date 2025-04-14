@@ -1051,6 +1051,7 @@ def main():
                 print(f"Reached maximum API requests limit ({max_requests}) for analysis.")
                 break
             
+            print(f"DEBUG: Starting processing of chunk {i}")
             print(f"Analyzing chunk {i+1}/{len(chunks)} (pages {', '.join(str(p) for p in chunks[i].source_pages)})")
             analyzed_chunk = analyze_chunk_with_concept_hierarchy(chunks[i], client, model_name)
             progress["analyzed_chunks"].append(analyzed_chunk)
@@ -1061,6 +1062,7 @@ def main():
             
             # Add a small delay to avoid rate limiting
             time.sleep(1)
+            print(f"DEBUG: Completed processing of chunk {i}")
     
     # STEP 2: Build the concept forest if we have analyzed chunks
     if progress["analyzed_chunks"]:
@@ -1192,6 +1194,8 @@ def main():
     print(f"- Used model: {model_name}")
     print("- Progress saved and can be resumed in next run")
     print("=" * 45)
+    print("Status update message")
+    sys.stdout.flush()  # Force output to be displayed immediately
 
 if __name__ == "__main__":
     main()
